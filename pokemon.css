@@ -1,0 +1,1313 @@
+body {
+    margin: 0;
+    background-color: rgb(71, 89, 109);
+    font-family: 'Tillana', cursive;
+    overflow-x: hidden;
+}
+
+.logo {
+    position: fixed;
+    left: 3%;
+    z-index: 4;
+    width: 75px;
+    height: auto;
+}
+
+/* Header Logo */
+.header_logo {
+    position: absolute;
+    top: 165px;
+    left: 20px;
+    z-index: 2;
+}
+
+nav {
+    background-color: rgb(22, 45, 83);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    list-style: none; 
+    justify-content: flex-end;
+}
+
+.menu li {
+    margin: 15px;
+}
+
+.menu li a {
+    color: white;
+    margin-left: 50px;
+    left: 850px;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu li a:hover:before {
+    transform: scaleX(1);
+}
+
+.toggle {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle:before,
+.toggle:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.toggle:before {
+    top: 0;
+}
+
+.toggle:after {
+    bottom: 0;
+}
+
+.toggle.active:before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.toggle.active:after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+video {
+    width: max-content;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+}
+
+
+/* content 1 */
+
+.content1bg {
+    position: absolute;
+    top: 122%;
+    z-index: 1;
+}
+
+.content2bg {
+    position: absolute;
+    top: 228%;
+    z-index: 1;
+}
+
+.content3bg {
+    position: absolute;
+    top: 323%;
+    z-index: 1;
+}
+
+.content1 h1 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    top: 1425px;
+    left: 1.5%;
+    z-index: 1;
+}
+
+.content1 h2 {
+    position: absolute;  
+    top: 1300px;  
+    left: 51.5%;  
+    transform: translateX(-50%);  
+    width: 35%;  
+    padding: 20px;  
+    background-color: rgb(244, 239, 239);  
+    color: black;  
+    font-size: 28px;  
+    text-align: center;  
+    z-index: 2;  
+
+    /* borders */
+    border: 2px solid rgba(92, 92, 92, 0.53);  
+    box-shadow:
+        0 0 0 4px white,  
+        0 0 0 6px rgba(92, 92, 92, 0.53),  
+        0 0 0 10px white,  
+        0 0 0 12px rgba(92, 92, 92, 0.75); 
+}
+
+.rowlet {
+    position: relative;
+    top: 1430px;
+    left: 160px;
+    width: 525px;
+    height: 525px;
+    z-index: 1;
+}
+
+.cyndaquil {
+    position: relative;
+    top: 1390px;
+    left: 200px;
+    width: 525px;
+    height: 525px;
+    z-index: 1;
+}
+
+.oshawott {
+    position: relative;
+    top: 1420px;
+    left: 180px;
+    width: 525px;
+    height: 525px;
+    z-index: 1;
+}
+
+.dartrix {
+    position: relative;
+    top: 1725px;
+    left: 220px;
+    width: 515px;
+    height: 515px;
+    z-index: 1;
+}
+
+.quilava {
+    position: relative;
+    top: 1725px;
+    left: 220px;
+    width: 515px;
+    height: 515px;
+    z-index: 1;
+}
+
+.dewott {
+    position: relative;
+    top: 1725px;
+    left: 220px;
+    width: 515px;
+    height: 515px;
+    z-index: 1;
+}
+
+.decidueye {
+    position: relative;
+    top: 2000px;
+    left: 200px;
+    width: 550px;
+    height: 550px;
+    z-index: 1;
+}
+
+.typhlosion {
+    position: relative;
+    top: 2000px;
+    left: 180px;
+    width: 550px;
+    height: 550px;
+    z-index: 1;
+}
+
+.samurott {
+    position: relative;
+    top: 2000px;
+    left: 140px;
+    width: 550px;
+    height: 550px;
+    z-index: 1;
+}
+
+
+
+/* Name Button 1 */
+
+.name-button1{
+    position: relative;
+    top: 265px;
+    left: 135px;
+    z-index: 2;
+    display: flex;
+    gap: 20px;
+}
+
+.content1 .button {
+    width: 180px;
+    height: 45px;
+    display: inline-block;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size: xx-large;
+    font-family:'Tillana', cursive;
+    font-weight: bold;
+    color: white;
+    margin: 170px; /*margin size */
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.button:active{
+    position:relative;
+    top:6px;
+}
+
+/* Cyndaquil Button */
+
+.name1{
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.name1:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name1:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Rowlet Button */
+
+.name2{
+    background: #34495e;
+}
+
+.name2:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name2:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Oshawott Button */
+
+.name3{
+    background: #34495e;
+}
+
+.name3:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name3:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Name Button 2 */
+
+.name-button2{
+    position: relative;
+    top: 650px;
+    left: 135px;
+    z-index: 2;
+    display: flex;
+    gap: 20px;
+}
+
+.content2 .button {
+    width: 180px;
+    height: 45px;
+    display: inline-block;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size: xx-large;
+    font-family:'Tillana', cursive;
+    font-weight: bold;
+    color: white;
+    margin: 170px; /*margin size */
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.button:active{
+    position:relative;
+    top:6px;
+}
+
+/* Dartrix Button */
+
+.name4{
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.name4:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name4:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Quilava Button */
+
+.name5{
+    background: #34495e;
+}
+
+.name5:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name5:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Dewott Button */
+
+.name6{
+    background: #34495e;
+}
+
+.name6:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name6:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Name Button 3 */
+
+.name-button3{
+    position: relative;
+    top: 1075px;
+    left: 135px;
+    z-index: 2;
+    display: flex;
+    gap: 20px;
+}
+
+.content3 .button {
+    width: 180px;
+    height: 45px;
+    display: inline-block;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size: xx-large;
+    font-family:'Tillana', cursive;
+    font-weight: bold;
+    color: white;
+    margin: 170px; /*margin size */
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.button:active{
+    position:relative;
+    top:6px;
+}
+
+/* Decidueye Button */
+
+.name7{
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.name7:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name7:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Typhlosion Button */
+
+.name8{
+    background: #34495e;
+}
+
+.name8:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name8:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Samurott Button */
+
+.name9{
+    background: #34495e;
+}
+
+.name9:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name9:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+
+/* Content 2 */
+
+.content4bg {
+    position: absolute;
+    top: 435%;
+    z-index: 1;
+}
+
+
+.content2 h1 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    top: 1200px;
+    left: 1.5%;
+    z-index: 1;
+}
+
+
+.wyrdeer {
+    position: relative;
+    top: 1250px;
+    left: 200px;
+    width: 525px;
+    height: 525px;
+    z-index: 1;
+}
+
+.basculegion {
+    position: relative;
+    top: 1300px;
+    left: 200px;
+    width: 525px;
+    height: 525px;
+    z-index: 1;
+}
+
+.kleavor {
+    position: relative;
+    top: 1250px;
+    left: 200px;
+    width: 525px;
+    height: 525px;
+    z-index: 1;
+}
+
+
+/* Name Button 4 */
+
+.name-button4{
+    position: relative;
+    top: 1170px;
+    left: 135px;
+    z-index: 2;
+    display: flex;
+
+}
+
+.content2 .button {
+    width: 250px;
+    height: 45px;
+    display: inline-block;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size: xx-large;
+    font-family:'Tillana', cursive;
+    font-weight: bold;
+    color: white;
+    margin: 140px; /*margin size */
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.button:active{
+    position:relative;
+    top:6px;
+}
+
+/* Wyrdeer Button */
+
+.name10{
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.name10:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name10:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Basculegion Button */
+
+.name11{
+    background: #34495e;
+}
+
+.name11:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name11:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Kleavor Button */
+
+.name12{
+    background: #34495e;
+}
+
+.name12:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name12:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+
+/* Content 3 */
+
+.content5bg {
+    position: absolute;
+    top: 547%;
+    z-index: 1;
+}
+
+.content3 h1 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    top: 1100px;
+    left: 2%;
+    z-index: 1;
+}
+
+.content3 p {
+    position: relative;
+    text-align: center;
+    font-size: 27px;
+    color: white;
+    top: 1100px;
+    left: 26%;
+    width: 50%;
+    z-index: 1;
+}
+
+.hisuian_voltorb {
+    position: relative;
+    top: 1200px;
+    left: 165px;
+    width: 525px;
+    height: 525px;
+    z-index: 1;
+}
+
+.hisuian_zorua {
+    position: relative;
+    top: 1125px;
+    left: 200px;
+    width: 550px;
+    height: 550px;
+    z-index: 1;
+}
+
+.hisuian_zoroark {
+    position: relative;
+    top: 1125px;
+    left: 160px;
+    width: 570px;
+    height: 570px;
+    z-index: 1;
+}
+
+/* Name Button 5 */
+
+.name-button5{
+    position: relative;
+    top: 1075px;
+    left: 110px;
+    z-index: 2;
+    display: flex;
+
+}
+
+.content3 .button {
+    width: 250px;
+    height: 45px;
+    display: inline-block;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size: 26px;
+    font-family:'Tillana', cursive;
+    font-weight: bolder;
+    color: white;
+    margin: 143px; /*margin size */
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.content3 .button:active{
+    position:relative;
+    top:6px;
+}
+
+/* Hisuian Voltorb Button */
+
+.name13{
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.name13:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name13:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Hisuian Zorua Button */
+
+.name14{
+    width: 225px;
+    background: #34495e;
+}
+
+.name14:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name14:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Hisuian Zoroark Button */
+
+.name15{
+    background: #34495e;
+}
+
+.name15:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name15:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* content 4 */
+
+.content6bg {
+    position: absolute;
+    top: 650%;
+    z-index: 1;
+}
+
+.hisuian_braviary {
+    position: relative;
+    top: 1000px;
+    left: 350px;
+    width: 550px;
+    height: 550px;
+    z-index: 1;
+}
+
+.hisuian_growlithe {
+    position: relative;
+    top: 1000px;
+    left: 550px;
+    width: 450px;
+    height: 450px;
+    z-index: 1;
+}
+
+/* Name Button 6 */
+
+.name-button6{
+    position: relative;
+    top: 925px;
+    left: 215px;
+    z-index: 2;
+    display: flex;
+
+}
+
+.content4 .button {
+    width: 300px;
+    height: 45px;
+    display: inline-block;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size: 30px;
+    font-family:'Tillana', cursive;
+    font-weight: bold;
+    color: white;
+    margin: 200px; /*margin size */
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.button:active{
+    position:relative;
+    top:6px;
+}
+
+/* Hisuian Braviary Button */
+
+.name16{
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.name16:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name16:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Hisuian Growlithe Button */
+
+.name17{
+    width: 225px;
+    background: #34495e;
+}
+
+.name17:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name17:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+
+/* Content 5 */
+
+.content7bg {
+    position: absolute;
+    top: 762%;
+    z-index: 1;
+}
+
+.content5 h1 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    top: 1000px;
+    left: 2%;
+    z-index: 1;
+}
+
+.dialga {
+    position: relative;
+    top: 1000px;
+    left: 350px;
+    width: 650px;
+    height: 650px;
+    z-index: 1;
+}
+
+.palkia {
+    position: relative;
+    top: 1000px;
+    left: 300px;
+    width: 670px;
+    height: 670px;
+    z-index: 1;
+}
+
+
+/* Name Button 7 */
+
+.name-button7{
+    position: relative;
+    top: 1000px;
+    left: 40px;
+    z-index: 2;
+    display: flex;
+
+}
+
+.content5 .button {
+    width: 450px;
+    height: 45px;
+    display: inline-block;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size: 30px;
+    font-family:'Tillana', cursive;
+    font-weight: bold;
+    color: white;
+    margin-left: 300px; /*margin size */
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.button:active{
+    position:relative;
+    top:6px;
+}
+
+/* Dialga Button */
+
+.name18{
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.name18:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name18:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Palkia Button */
+
+.name19{
+    width: 225px;
+    background: #34495e;
+}
+
+.name19:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name19:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+
+
+
+
+
+/* Content 6 */
+
+.content8bg {
+    position: absolute;
+    top: 873%;
+    z-index: 1;
+}
+
+.content6 h1 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    top: 1100px;
+    left: 2%;
+    z-index: 1;
+}
+
+.darkrai {
+    position: relative;
+    top: 1150px;
+    left: 350px;
+    width: 580px;
+    height: 580px;
+    z-index: 1;
+}
+
+.shaymin {
+    position: relative;
+    top: 1180px;
+    left: 480px;
+    width: 525px;
+    height: 525px;
+    z-index: 1;
+}
+
+
+/* Name Button 8 */
+
+.name-button8{
+    position: relative;
+    top: 1200px;
+    z-index: 2;
+    display: flex;
+
+}
+
+.content6 .button {
+    width: 200px;
+    height: 45px;
+    display: inline-block;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size: 30px;
+    font-family:'Tillana', cursive;
+    font-weight: bold;
+    color: white;
+    margin-left: 490px; /*margin size */
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.button:active{
+    position:relative;
+    top:6px;
+}
+
+/* Darkrai Button */
+
+.name20{
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.name20:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name20:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+/* Shaymin Button */
+
+.name21{
+    width: 225px;
+    background: #34495e;
+}
+
+.name21:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name21:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+
+
+/* Content 7 */
+
+.content9bg {
+    position: absolute;
+    top: 985%;
+    z-index: 1;
+}
+
+
+.arceus {
+    position: relative;
+    top: 1250px;
+    left: 550px;
+    width: 875px;
+    height: 875px;
+    z-index: 1;
+}
+
+
+/* Name Button 9 */
+
+.name-button9{
+    position: relative;
+    top: 1220px;
+    left: 550px;
+    z-index: 2;
+    display: flex;
+
+}
+
+.content7 .button {
+    width: 200px;
+    height: 45px;
+    display: inline-block;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size: 35px;
+    font-family:'Tillana', cursive;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.button:active{
+    position:relative;
+    top:6px;
+}
+
+/* Arceus Button */
+
+.name22{
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+}
+
+.name22:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+}
+
+.name22:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+}
+
+/* end video */
+
+.piplupart video {
+    position: absolute;
+    top: 1097%;
+    width: max-content;
+    height: max-content;
+}
+
+
+/* Footer */ 
+
+.content9 {
+    position: relative;
+}
+
+.content10bg {
+    position: relative;
+    top: 2500px;
+}
+
+.pokemoncompany {
+    position: relative;
+    z-index: 2;
+    top: 1570px;
+    left: 765px;
+    width: 20%;
+    height: 20%;
+}
+
+.nintendologo {
+    position: relative;
+    z-index: 2;
+    top: 1550px;
+    left: 485px;
+    width: 10%;
+    height: 10%;
+}
+
+.esrb {
+    position: relative;
+    z-index: 2;
+    top: 1550px;
+    left: 800px;
+    width: 15%;
+    height: 15%;
+}
+
+.pokemoncompany:hover, .nintendologo:hover, .esrb:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+.endnote {
+    position: relative;
+    z-index: 2;
+    top: 650px;
+}
+
+.endnote h1 {
+    font-size: 14px;
+    color: #333;
+    font-size: x-large;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+
+.socialmediabuttons {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    top: 1675px;
+    left: 25px;
+}
+
+.socialmediabuttons a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socialmediabuttons a:hover {
+    transform: scale(1.2);
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #1da1f2;
+}
+
+.youtube:hover {
+    color: #ff0000;
+}
+
+.instagram:hover {
+    color: #e4405f;
+}
+
+
+.footerlinks {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    top: 1750px;
+    left: 25px;
+}
+
+.footerlinks a {
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    position: relative;
+    display: inline-block;
+}
+
+.footerlinks a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.footerlinks a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
