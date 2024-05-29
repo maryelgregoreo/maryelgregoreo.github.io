@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Home Page</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="gameplay.css">
+
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    
+
+    <!-- Header Logo -->
+    <img class="header_logo" src="contents/arceus-logo.png" alt="header_logo">
+    
+    <!-- Navigation Bar -->
+    <nav class="container">
+
+        <!-- Pokemon Logo -->
+        <img class="logo" src="contents/pokeball-logo.png" alt="logo"> 
+
+        <ul class="menu">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="story.html">STORY</a></li>
+            <li><a href="gameplay.html">GAMEPLAY</a></li>
+            <li><a href="pokemon.html">POKEMON</a></li>
+            <li><a href="https://www.youtube.com/watch?v=I4RynqpahT8">TRAILER</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home video -->
+    <video autoplay loop muted>
+        <source src="contents/pla_gameplay.mp4" type="video/mp4">
+    </video>
+   
+    
+    <!-- Content 1 -->
+
+        <div class="content1">
+
+            <!-- Background -->
+                <img class="content1bg" src="contents/plabg3.1.png" alt="c1bg">
+                <img class="content1bg2" src="contents/plabg3.2.png" alt="c1bg">
+
+            <!-- Title -->
+                <h1> Catch Wild Pokémon </h1>
+
+            <!-- Text -->
+                <h2> Encounter and battle Pokémon in the Hisui region of Pokémon Legends: Arceus. </h2>
+
+
+            <!-- Image -->
+                <img class="mypkmn" src="contents/pla_mypkmn2.jpg" alt="mypkmnimage">
+
+                <!-- Tab Slider -->
+                    <div class="catching_mechanics">
+
+                        <!-- Button Slider -->
+                        <div class="slider slider-button">
+                            <button class="tab-button" data-tab="1"> SEEK </button>
+                            <button class="tab-button" data-tab="2"> OBSERVE </button>
+                            <button class="tab-button" data-tab="3"> WEAKEN </button>
+                            <button class="tab-button" data-tab="4"> CATCH </button>
+                        </div>
+
+                        <!-- Content Slider -->
+                        <div class="slider slider-content">
+
+                            <!-- Content 1: Seek -->
+                            <div class="tab-content" data-content="1"> 
+                                <!-- Title -->
+                                <h1> Seek out Pokemon </h1> 
+
+                                <!-- Content -->
+                                <p> Pokémon live freely in all kinds of places. In grassy fields, in forests, or out on the water, to name a few. 
+                                    There may be certain Pokémon behaviors, or even entire species that you witness only under the right conditions, 
+                                    such as during a particular time of day or in certain kinds of weather.</p>
+                                
+                                <!-- Video -->
+                                <video autoplay loop muted>
+                                    <source src="contents/pla_seek.mp4" type="video/mp4">
+                                </video>
+                            </div>
+
+                            <!-- Content 2: Observe -->
+                            <div class="tab-content" data-content="2"> 
+
+                                <!-- Title -->
+                                <h1> Observe Pokemon to learn their dispositions </h1> 
+
+                                <!-- Content -->
+                                <p> Wild Pokémon will react to you in different ways depending on the species. Some may come right at you and attack, 
+                                    while others will run away as soon as they spot you. Tailoring your approach to Pokémon’s dispositions will be the 
+                                    key to successfully catching them.</p>
+
+                                <!-- Video -->
+                                <video autoplay loop muted>
+                                        <source src="contents/pla_observe.mp4" type="video/mp4">
+                                </video>
+                            </div>
+
+                            <!-- Content 3: Weaken -->
+                            <div class="tab-content" data-content="3"> 
+
+                                <!-- Title -->
+                                <h1> Weaken Pokemon in battle to catch them</h1> 
+
+                                <!-- Content -->
+                                <p> Battling is essential for catching certain Pokémon. By weakening a wild Pokémon in battle, you increase your chances of a successful capture.
+                                    Lower its health and use status effects like sleep or paralysis to make it easier to catch. This strategic approach ensures 
+                                    the Pokémon is more likely to stay inside the Poké Ball!</p>
+
+                                <!-- Video -->
+                                <video autoplay loop muted>
+                                    <source src="contents/pla_weaken.mp4" type="video/mp4">
+                                </video>
+                            </div>
+
+                            <!-- Content 4: Catch -->
+                            <div class="tab-content" data-content="4"> 
+
+                                <!-- Title -->
+                                <h1> Carefully aim and throw a PokeBall </h1> 
+
+                                <!-- Content -->
+                                <p> You can try to catch wild Pokémon by throwing Poké Balls at them. To catch wild Pokémon, approach them quietly and throw a Poké Ball. 
+                                    Aim carefully to hit your target. If the Pokémon stays inside the ball, you've successfully caught it. 
+                                    Be quick, as you might miss the opportunity if the Pokémon escapes!</p>
+
+                                <!-- Video -->
+                                <video autoplay loop muted>
+                                    <source src="contents/pla_catch.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script src="gameplay.js"></script>
+        </div>
+
+
+        <!-- Content 2 -->
+
+        <div class="content2">
+
+            <!-- Video -->
+            <video class="battleclip" autoplay loop muted>
+                <source src="contents/pla_battleclip.mp4" type="video/mp4">
+            </video>
+
+            <!-- Background-->
+            <img class="content2bg" src="contents/plabg3.4.png" alt="c2bg">
+
+            <!-- Title -->
+            <h1> Battle Wild Pokemon </h1>
+
+            <!-- Video -->
+            <video class="mybattleclip" autoplay loop muted>
+                <source src="contents/pla_mybattle.mp4" type="video/mp4">
+            </video>
+
+            <!-- Subtitle -->
+            <h2> Time for a Pokemon Battle! </h2>
+
+            <!-- Battle Information -->
+            <p> Throw a Poké Ball containing one of your Pokémon at a wild Pokémon, seamlessly entering the battle. 
+                Unlike previous games, battles don't follow a strict turn-by-turn basis. Instead, a Pokémon's stats 
+                and other factors determine the number and order of actions, allowing for multiple consecutive turns. 
+                This system lets you heal your Pokémon mid-battle or unleash a series of attacks in quick succession. </p>
+        </div>
+
+        <!-- Content 3 -->
+
+        <div class="content3">
+
+            <!-- Background-->
+            <img class="content3bg" src="contents/plabg3.5.png" alt="c3bg">
+
+            <!-- Title -->
+            <h1> Agile Style and Strong Style </h1>
+
+            <!-- Style Information -->
+            <p> In Pokémon Legends: Arceus, your Pokémon can use moves in two new styles: 
+                Agile Style and Strong Style. Agile Style increases action speed, allowing for quicker 
+                turns but with reduced move power. Strong Style boosts move power but slows down the action speed. 
+                Use these styles strategically to gain an advantage in battle. </p>
+
+            <!-- Video -->
+            <video class="battlestyle" autoplay loop muted>
+                <source src="contents/pla_battlestyle.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Content 4 -->
+
+        <div class="content4">
+            
+            <!-- Background-->
+            <img class="content4bg" src="contents/plabg3.6.png" alt="c4bg">
+
+            <!-- Title -->
+            <h1> Completing the PokeDex! </h1>
+
+            <!-- Subtitle -->
+            <h2> How to complete the PokeDex? </h2>
+
+            <!-- Style Information -->
+            <p> You add information to your Pokédex by catching Pokémon. 
+                But catching a Pokémon once won’t be enough to complete its Pokédex entry! <br class="space"> 
+                You’ll need to keep studying that Pokémon and complete research tasks to increase 
+                your research progress on it and flesh out its Pokédex entry. <br class="space"> 
+                Completing these research tasks will also contribute to your work with the Galaxy 
+                Expedition Team and raise your rank as a team member, granting you access to new areas. </p>
+
+            <!-- Images -->
+            <img class="pkdex" src="contents/pkdex.jpg" alt="pkdex">
+            <img class="pkdexinfo" src="contents/pkdex_info.jpg" alt="pkdexinfo">
+
+        </div>
+
+        <!-- Content 5 -->
+        <div class="content5">
+            
+            <!-- Background -->
+            <img class="content5bg" src="contents/plabg3.7.png" alt="c5bg">
+
+            <!-- Title -->
+            <h1> Riding Pokemon across Unexplored Areas </h1>
+
+            <!-- Information -->
+            <p> During your adventure, you’ll receive a Celestica Flute. You can play the flute to summon special Pokémon 
+                that will let you ride them. Riding these Pokémon on land, across water, or even through the skies will help you 
+                more freely explore the Hisui region.</p>
+
+            <!-- Image -->
+            <img class="pla_cflute" src="contents/pla_rdpkmn1.jpg" alt="cflute">
+
+        </div>
+
+        <!-- Content 6 -->
+        <div class="content6">
+
+            <!-- Background -->
+            <img class="content6bg" src="contents/plabg3.7.png" alt="c6bg">
+
+            <!-- Name -->
+            <h1> Wyrdeer </h1>
+
+            <!-- Pokemon Information -->
+            <p> Wyrdeer has powerful, sturdy legs, and riding it will allow you to gallop across the land at great speed. 
+                By having Wyrdeer dash forward, you’ll be able to give yourself an even greater speed boost. You can also 
+                have it jump to leap over obstacles.</p>
+
+            <!-- Wrydeer Video -->
+            <video autoplay loop muted>
+                <source src="contents/pla_wyrdeer.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Content 7 -->
+        <div class="content7">
+
+            <!-- Background -->
+            <img class="content7bg" src="contents/plabg3.8.png" alt="c6bg">
+
+            <!-- Name -->
+            <h1> Basculegion </h1>
+
+            <!-- Pokemon Information -->
+            <p> Basculegion will be a powerful ally when it comes to completing your Pokédex, as it can carry you across bodies of water. 
+                Basculegion is also able to launch itself from the water’s surface, letting you leap effortlessly over obstacles in your way.</p>
+
+            <!-- Basculegion Video -->
+            <video autoplay loop muted>
+                <source src="contents/pla_basculegion.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Content 8 -->
+        <div class="content8">
+
+            <!-- Name -->
+            <h1> Hisuian Braviary </h1>
+
+            <!-- Pokemon Information -->
+            <p> Hisuian Braviary will let you soar through the skies, flying with ease across great chasms and expanding the ways you can travel 
+                and explore the region. From your vantage point in the air, you’ll have a great view of what kinds of Pokémon and items might be below, 
+                which will aid you on your surveys.</p>
+
+            <!-- Braviary Video -->
+            <video autoplay loop muted>
+                <source src="contents/pla_braviary.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+    <!-- Footer -->
+
+    <div class="content9">
+
+        <img class="content9bg" src="contents/plabg4.png" alt="c6bg">
+
+        <a href="https://www.pokemon.com/us" target="_blank">
+            <img class="pokemoncompany" src="contents/the-pokemon-company.png" alt="The Pokemon Company Logo">
+        </a>
+
+        <a href="https://www.nintendo.com/us/" target="_blank">
+            <img class="nintendologo" src="contents/nintendologo.png" alt="Nintendo Logo">
+        </a>
+
+        <a href="https://www.esrb.org/" target="_blank">
+            <img class="esrb" src="contents/everyonerating.png" alt="ESRB">
+        </a>
+
+        <div class="endnote">
+            <h1> Game footage is not final. Screenshots and game footage are from a title under development. <br>
+                ©2022 Pokémon. ©1995–2022 Nintendo / Creatures Inc. / GAME FREAK inc. <br> Nintendo Switch and the 
+                Nintendo Switch logo are trademarks of Nintendo. </h1>
+        </div>
+
+
+        <div class="socialmediabuttons">
+            <a href="https://www.facebook.com/Pokemon/" target="_blank" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/pokemon/?mx=2" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/user/pokemon" target="_blank" class="youtube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/pokemon/" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+
+         <div class="footerlinks">
+            <a href="https://support.pokemon.com/hc/en-us?_gl=1*mdb3wk*_ga*MTQ1MzI2NDgxMy4xNzE0NDU3ODU1*_ga_PNSEMYT2VF*MTcxNjU4NzAzNS4yMC4xLjE3MTY1ODg1NTMuMC4wLjA."> Customer Service </a>
+            <a href="https://www.pokemon.com/us/terms-of-use/?_gl=1*elv2hq*_ga*MTQ1MzI2NDgxMy4xNzE0NDU3ODU1*_ga_PNSEMYT2VF*MTcxNjU4NzAzNS4yMC4xLjE3MTY1ODg1NTMuMC4wLjA."> Terms of Use </a>
+            <a href="https://www.pokemon.com/us/privacy-notice/?_gl=1*elv2hq*_ga*MTQ1MzI2NDgxMy4xNzE0NDU3ODU1*_ga_PNSEMYT2VF*MTcxNjU4NzAzNS4yMC4xLjE3MTY1ODg1NTMuMC4wLjA."> Privacy Notice </a>
+            <a href="https://www.pokemon.com/us/legal/?_gl=1*16fhlww*_ga*MTQ1MzI2NDgxMy4xNzE0NDU3ODU1*_ga_PNSEMYT2VF*MTcxNjU4NzAzNS4yMC4xLjE3MTY1ODg1NTMuMC4wLjA."> Legal Information</a>
+         </div>
+</body>
+</html>
+
