@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Home Page</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="home.css">
+
+    <!-- Font Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    
+
+    <!-- Header Logo -->
+    <img class="header_logo" src="contents/arceus-logo.png" alt="header_logo">
+    
+    <!-- Navigation Bar -->
+    <nav class="container">
+
+        <!-- Pokemon Logo -->
+        <img class="logo" src="contents/pokeball-logo.png" alt="logo"> 
+
+        <ul class="menu">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="story.html">STORY</a></li>
+            <li><a href="gameplay.html">GAMEPLAY</a></li>
+            <li><a href="pokemon.html">POKEMON</a></li>
+            <li><a href="https://www.youtube.com/watch?v=I4RynqpahT8">TRAILER</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home video -->
+    <video autoplay loop muted>
+        <source src="contents/pla_home.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- Content 2 -->
+        <div class="content2">
+
+            <!-- Background -->
+            <img class="homebg" src="contents/plahomebg.png" alt="homebg">
+
+            <!-- Text Box -->
+            <h1> Survey, catch, and research wild Pokémon in a long-gone era of Sinnoh to complete the region’s first Pokédex. </h1>
+
+            <!-- Image -->
+            <img class="PLA_image" src="contents/pkmnlegendsarceus.jpg" alt="PLA_image">
+            
+        </div>
+
+
+  <!-- Content 3 -->
+        <div class="content3">
+
+            <!-- Text Box -->
+             <h1>Pokemon Legends: Arceus introduces a fascinating new region called Hisui, 
+                which is set in the distant past of the Pokémon world.</h1>
+
+            <!-- Image -->
+             <img class="hisui_region" src="contents/hisui region.png" alt="hisui_region">
+
+             <!-- Button -->
+            <div class="sbuttoncontainer">
+                <div class="sbutton">
+                    <a class="button storybutton" href="story.html"> Learn More!</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    <!-- Content 4 -->
+        <div class="content4">
+            
+            <!-- Background Image -->
+            <img class="content4bg" src="contents/plabg2.png" alt="c4bg">
+
+            <!-- Gameplay Clip -->
+            <video autoplay loop muted>
+                <source class="pla_gameplay_clip" src="contents/pla_gameplay_clip.mp4" alt="pla_gameplay_clip" type="video/mp4">
+            </video>
+
+            <!-- Text Box-->
+            <h1> Combines open-world exploration with innovative catching and battling mechanics set in the Hisui Region. </h1>
+
+            <!-- Button -->
+            <div class="gbuttoncontainer">
+                <div class="gbutton">
+                    <a class="button gameplaybutton" href="gameplay.html"> More!</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Content 5 -->
+        <div class="content5">
+
+            <!-- Background Image -->
+            <img class="content5bg" src="contents/plabg3.png" alt="c5bg">
+
+            <div class="slide-container">
+                <div class="slide active">
+                    <img src="contents/pokemon_rowlet.png" alt="Rowlet">
+                </div>
+                <div class="slide">
+                    <img src="contents/pokemon_cyndaquil.png" alt="Cyndaquil">
+                </div>
+                <div class="slide">
+                    <img src="contents/pokemon_oshawott.png" alt="Oshawott">
+                </div>
+
+                <button class="next" onclick="nextSlide()"> > </button>
+            </div>
+
+            <!-- Button -->
+            <div class="pbuttoncontainer">
+                <div class="pbutton">
+                    <a class="button pokedexbutton" href="pokemon.html"> More!</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <script src="home.js"> </script>
+
+
+        <!-- Content 6 -->
+        <div class="content6">
+
+            <!-- Background -->
+            <img class="content6bg" src="contents/plabg4.png" alt="c6bg">
+
+            <!-- The Pokemon Company Logo and link -->
+            <a href="https://www.pokemon.com/us" target="_blank">
+                <img class="pokemoncompany" src="contents/the-pokemon-company.png" alt="The Pokemon Company Logo">
+            </a>
+
+            <!-- Nintent Logo and link -->
+            <a href="https://www.nintendo.com/us/" target="_blank">
+                <img class="nintendologo" src="contents/nintendologo.png" alt="Nintendo Logo">
+            </a>
+
+            <!-- Game rating and link -->
+            <a href="https://www.esrb.org/" target="_blank">
+                <img class="esrb" src="contents/everyonerating.png" alt="ESRB">
+            </a>
+
+            <!-- Game endnote -->
+            <div class="endnote">
+                <h1> Game footage is not final. Screenshots and game footage are from a title under development. <br>
+                    ©2022 Pokémon. ©1995–2022 Nintendo / Creatures Inc. / GAME FREAK inc. <br> Nintendo Switch and the 
+                    Nintendo Switch logo are trademarks of Nintendo. </h1>
+            </div>
+
+            <!-- Social Media Buttons -->
+            <div class="socialmediabuttons">
+
+                <!-- Links and icons -->
+                <a href="https://www.facebook.com/Pokemon/" target="_blank" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/pokemon/?mx=2" target="_blank" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/user/pokemon" target="_blank" class="youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/pokemon/" target="_blank" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+
+            <!-- Footerlinks -->
+             <div class="footerlinks">
+                <a href="https://support.pokemon.com/hc/en-us?_gl=1*mdb3wk*_ga*MTQ1MzI2NDgxMy4xNzE0NDU3ODU1*_ga_PNSEMYT2VF*MTcxNjU4NzAzNS4yMC4xLjE3MTY1ODg1NTMuMC4wLjA."> Customer Service </a>
+                <a href="https://www.pokemon.com/us/terms-of-use/?_gl=1*elv2hq*_ga*MTQ1MzI2NDgxMy4xNzE0NDU3ODU1*_ga_PNSEMYT2VF*MTcxNjU4NzAzNS4yMC4xLjE3MTY1ODg1NTMuMC4wLjA."> Terms of Use </a>
+                <a href="https://www.pokemon.com/us/privacy-notice/?_gl=1*elv2hq*_ga*MTQ1MzI2NDgxMy4xNzE0NDU3ODU1*_ga_PNSEMYT2VF*MTcxNjU4NzAzNS4yMC4xLjE3MTY1ODg1NTMuMC4wLjA."> Privacy Notice </a>
+                <a href="https://www.pokemon.com/us/legal/?_gl=1*16fhlww*_ga*MTQ1MzI2NDgxMy4xNzE0NDU3ODU1*_ga_PNSEMYT2VF*MTcxNjU4NzAzNS4yMC4xLjE3MTY1ODg1NTMuMC4wLjA."> Legal Information</a>
+             </div>
+
+        </div>
+</body>
+</html>

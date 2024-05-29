@@ -1,0 +1,643 @@
+/* whole site **/
+body {
+    margin: 0;
+    background-color: rgb(7, 55, 106); /* website color **/
+    font-family: 'Tillana', cursive; /* font for the whole site */
+    overflow-x: hidden;
+}
+
+
+/* header logo */
+.header_logo {
+    position: absolute; /* type of position */
+    top: 165px; 
+    left: 20px;
+    z-index: 2;
+}
+
+
+/* logo */
+.logo {
+    position: fixed;
+    left: 3%;
+    z-index: 4;
+    width: 75px;
+    height: auto;
+}
+
+
+/* navigation bar */
+nav {
+    background-color: rgb(22, 45, 83);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
+
+/* container to customize navigation bar */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+
+/* the list */
+.menu {
+    display: flex;
+    list-style: none; 
+    justify-content: flex-end;
+}
+
+
+/* the space between per link */
+.menu li {
+    margin: 15px;
+}
+
+
+/* links */
+.menu li a {
+    color: white;
+    margin-left: 50px;
+    left: 850px;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+
+/* links hover effect */
+.menu li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu li a:hover:before {
+    transform: scaleX(1);
+}
+
+
+.toggle {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle:before,
+.toggle:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    left: 0;
+
+}
+
+.toggle:before {
+    top: 0;
+}
+
+.toggle:after {
+    bottom: 0;
+}
+
+.toggle.active:before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.toggle.active:after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
+/* home video */
+video {
+    width:fit-content;
+    position: relative;
+    z-index: 1;
+    top: 100px;
+}
+
+/* content 2 */
+.content2 {
+    position: relative;  
+    margin-top: 5%;  
+}
+
+
+/* text box */
+.content2 h1 {
+    position: absolute;  
+    top: 125px;  
+    left: 51%;  
+    transform: translateX(-50%);  
+    width: 35%;  
+    padding: 20px;  
+    background-color: rgb(244, 239, 239);  
+    color: black;  
+    font-size: 20px;  
+    text-align: center;  
+    z-index: 2;  
+
+    /* borders */
+    border: 2px solid rgba(92, 92, 92, 0.53);  
+    box-shadow:
+        0 0 0 4px white,  
+        0 0 0 6px rgba(92, 92, 92, 0.53),  
+        0 0 0 10px white,  
+        0 0 0 12px rgba(92, 92, 92, 0.75);  
+}
+
+
+/* background */
+.homebg {
+    position: absolute;
+    top: 124%;
+    z-index: -1;
+}
+
+
+/* image */
+.content2 .PLA_image {
+    position: absolute; 
+    top: 300px; 
+    left: 20%; 
+    width: fit-content;
+    height: 625px; 
+    border: solid 15px #2A3E59;
+    z-index: 1; 
+}
+
+
+/* content 3 */
+.content3 {
+    position: relative;
+    margin-top: 62%;
+    display: flex;
+    gap: 20px;
+}
+
+
+/* image */
+.content3 .hisui_region {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    left: 50% ;
+    top: 21px;
+}
+
+
+/* text box */
+.content3 h1 {
+    position: relative;
+    width: 35%;
+    padding-bottom: 245px;  
+    padding-left: 170px;
+    padding-right: 110px;
+    padding-top: 70px;
+    text-align: center;
+    background-color: white;  
+}
+
+
+/* button position  */
+ .sbuttoncontainer{
+    position: relative;
+    top: 80px;
+    right: 925px;
+    margin:auto;
+    z-index: 1;
+}
+
+
+/* button style */
+.sbutton .button{
+    width: 160px;
+    height: 30px;
+    display: block;
+    float: left;
+    border-radius:10px;
+    margin: 10px 10px 10px 10px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size: x-large;
+    font-family:'Tillana', cursive;
+    font-weight: bold;
+    color: white;
+  }
+
+
+  /* button hover effect */
+  .button:active{
+    position:relative;
+    top:6px;
+  }
+
+  .storybutton{
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+  }
+  .storybutton:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+  }
+
+  .storybutton:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+  }
+
+
+/* content 4 */
+.content4 {
+    position: relative; 
+}
+
+
+/* background */
+.content4bg {
+    position: absolute; 
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+
+/* video */
+.content4 video {
+    position: relative; 
+    z-index: 2; 
+    width: 750px;
+    height: 850px;
+    top: -95px;
+    left: 560px;
+}
+
+
+/* text box */
+.content4 h1 {
+    position: relative;
+    z-index: 2;
+    line-height: 1;
+    text-align: center;
+    font-size: 23px;
+    width: 29%;
+    height: auto;
+    top: -235px;
+    left: 660px;
+}
+
+
+/*  button position */
+.gbuttoncontainer{
+    position: relative;
+    top: -200px;
+    left: 850px;
+    z-index: 2;
+}
+
+
+/* button style */
+.gbutton .button{
+    width: 160px;
+    height: 30px;
+    display: block;
+    float: left;
+    border-radius:10px;
+    margin: 10px 10px 10px 10px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size: x-large;
+    font-family:'Tillana', cursive;
+    font-weight: bold;
+    color: white;
+  }
+
+
+/* button hover effect */
+  .button:active{
+    position:relative;
+    top:6px;
+  }
+
+  .gameplaybutton{
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+  }
+  .gameplaybutton:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+  }
+
+  .gameplaybutton:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+  }
+
+
+  /* content 5 */
+
+.content5 {
+    position: relative;
+}
+
+
+/* background **/
+.content5bg {
+    position: relative; 
+    top: -120px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+
+/* pokemon slide style and position */
+.slide-container {
+    position: relative;
+    z-index: 2; 
+}
+
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slide.active {
+    display: block;
+}
+
+
+/* pokemon */ 
+.slide img {
+    position: relative;
+    top: -1070px;
+    left: 900px;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+}
+
+
+/* arrow style and position */
+.next {
+    position: absolute;
+    top: -700px;
+    left: 1100px;
+    padding: 10px 20px;
+    font-size: xx-large;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family:'Tillana', cursive;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+    color: black; 
+    transition: background-color 0.3s ease;
+}
+
+
+/* hover effect */
+.next:hover {
+    background-color: rgb(149, 143, 143); 
+}
+
+
+/* button style */
+.pbuttoncontainer{
+    position: relative;
+    top: -705px;
+    left: 1200px;
+    z-index: 2;
+}
+
+.pbutton .button{
+    width: 160px;
+    height: 30px;
+    display: block;
+    float: left;
+    border-radius:10px;
+    margin: 10px 10px 10px 10px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-size: x-large;
+    font-family:'Tillana', cursive;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* button active */
+  .button:active{
+    position:relative;
+    top:6px;
+  }
+
+  .pokedexbutton{
+    box-shadow: 0px 6px #2c3e50;
+    background: #34495e;
+  }
+  .pokedexbutton:active{
+    box-shadow: 0px 0px #2c3e50;
+    background: #2c3e50;
+  }
+
+  .pokedexbutton:hover {
+    background: rgb(65, 139, 154);
+    box-shadow: 0px 6px rgb(65, 139, 154);
+  }
+
+
+
+/* footer  */ 
+
+.content6 {
+    position: relative;
+}
+
+/* background */
+.content6bg {
+    position: relative;
+    top: -205px;
+}
+
+
+/* pokemon company logo style */
+.pokemoncompany {
+    position: relative;
+    z-index: 2;
+    top: -1250px;
+    left: 765px;
+    width: 20%;
+    height: 20%;
+}
+
+
+/* nintent logo style */
+.nintendologo {
+    position: relative;
+    z-index: 2;
+    top: -1270px;
+    left: 485px;
+    width: 10%;
+    height: 10%;
+}
+
+
+/* rating logo style */
+.esrb {
+    position: relative;
+    z-index: 2;
+    top: -1270px;
+    left: 800px;
+    width: 15%;
+    height: 15%;
+}
+
+
+/* all logo hover effect */
+.pokemoncompany:hover, .nintendologo:hover, .esrb:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+/* endnote */
+.endnote {
+    position: relative;
+    z-index: 2;
+    top: -1200px;
+}
+
+
+/* endnote style */
+.endnote h1 {
+    font-size: 14px;
+    color: #333;
+    font-size: x-large;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* social media buttons style */
+.socialmediabuttons {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    top: -1100px;
+    left: 25px;
+}
+
+.socialmediabuttons a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* hover effect */
+.socialmediabuttons a:hover {
+    transform: scale(1.2);
+}
+
+/* facebook */
+.facebook:hover {
+    color: #3b5998;
+}
+
+/* twitter */
+.twitter:hover {
+    color: #1da1f2;
+}
+
+/*youtube */
+.youtube:hover {
+    color: #ff0000;
+}
+
+/* instagram */
+.instagram:hover {
+    color: #e4405f;
+}
+
+
+/* footerlinks */
+.footerlinks {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    top: -1000px;
+    left: 25px;
+}
+
+/* style */
+.footerlinks a {
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    position: relative;
+    display: inline-block;
+}
+
+.footerlinks a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+/* hover effect */
+.footerlinks a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
