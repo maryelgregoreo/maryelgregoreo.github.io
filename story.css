@@ -1,0 +1,786 @@
+/* whole site style **/
+body {
+    margin: 0;
+    font-family: 'Tillana', cursive; /* font for the whole site */
+    overflow-x: hidden;
+}
+
+
+/* header logo */
+.header_logo {
+    position: absolute;
+    top: 165px;
+    left: 20px;
+    z-index: 2;
+}
+
+
+/* logo */
+.logo {
+    position: fixed;
+    left: 3%;
+    z-index: 4;
+    width: 75px;
+    height: auto;
+}
+
+
+/* navigation bar */
+nav {
+    background-color: rgb(22, 45, 83);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
+
+/* container to customize navigation bar */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+
+/* the list */
+.menu {
+    display: flex;
+    list-style: none; 
+    justify-content: flex-end;
+}
+
+
+/* the space between per link */
+.menu li {
+    margin: 15px;
+}
+
+
+/* links */
+.menu li a {
+    color: white;
+    margin-left: 50px;
+    left: 850px;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+
+/* links hover effect */
+.menu li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu li a:hover:before {
+    transform: scaleX(1);
+}
+
+
+.toggle {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle:before,
+.toggle:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.toggle:before {
+    top: 0;
+}
+
+.toggle:after {
+    bottom: 0;
+}
+
+.toggle.active:before {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.toggle.active:after {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
+/* home video */
+video {
+    width: max-content;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+}
+
+
+/* content 1 */
+
+/* background  1 */
+.content1bg {
+    position: absolute;
+    top: 122%;
+    z-index: -1;
+}
+
+
+/* background 2 */ 
+.content1bg2 {
+    position: absolute;
+    top: 234%;
+    z-index: -1;
+}
+
+
+/* title */
+.content1 h1 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    top: 1350px;
+}
+
+
+/* text box */
+.content1 h2 {
+    position: absolute;  
+    top: 1525px;  
+    left: 50%;  
+    transform: translateX(-50%);  
+    width: 35%;  
+    padding: 20px;  
+    background-color: rgb(244, 239, 239);  
+    color: black;  
+    font-size: 20px;  
+    text-align: center;  
+    z-index: 2;  
+
+    /* borders */
+    border: 2px solid rgba(92, 92, 92, 0.53);  
+    box-shadow:
+        0 0 0 4px white,  
+        0 0 0 6px rgba(92, 92, 92, 0.53),  
+        0 0 0 10px white,  
+        0 0 0 12px rgba(92, 92, 92, 0.75); 
+}
+
+
+/* hisuimap style */
+.hisuimap  {
+    position: relative;
+    top: 1600px;
+    left: 425px;
+    height: 600px;
+    width: 1000px;
+    z-index: 1;
+}
+
+
+/* information */
+.content1 p {
+    position: relative;
+    text-align: center;
+    top: 1620px;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+
+/* image scroller style */
+.image_scroller {
+    position: relative;
+    top: 1640px;
+    background-color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+/* images size */
+
+.image_scroller img {
+    width: 600px;
+    height: 350px;
+}
+
+
+/* Content 2 */ 
+
+/* background */
+.content2bg {
+    position: absolute;
+    top: 346%;
+}
+
+
+/* video */
+.content2 video {
+    position: relative; 
+    z-index: 2; 
+    width: 800px;
+    height: 950px;
+    top: 1725px;
+    left: 560px;
+}
+
+
+/* title */
+.content2 h1 {
+    position: relative;
+    z-index: 1;
+    top: 875px;
+    left: 590px;
+    color: white;
+    font-size: 50px;
+}
+
+
+/* information */
+.content2 p {
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    height: auto;
+    top: 1520px;
+    left: 525px;
+    width: 50%;
+}
+
+
+/* content 3 */
+
+/* background */
+.content3bg {
+    position: absolute;
+    top: 457%;
+}
+
+
+/* title */
+.content3 h1 {
+    position: relative;
+    top: 1800px;
+    left: 500px;
+    font-size: 45px;
+    z-index: 1;
+}
+
+
+/* main character image */
+.content3mc {
+    position: relative;
+    top: 1750px;
+    left: 550px;
+    height: 750px;
+    width: 750px;
+    z-index: 1;
+}
+
+
+/* background */
+.char1bg {
+    position: relative;
+    top: 1700px;
+    z-index: 1;
+}
+
+
+/* characters title */
+.maintitle {
+    position: relative;
+    top: 1900px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    z-index: 3;
+}
+
+
+/* character 1 style */
+.char1 {
+    position: relative;
+    top: 850px;
+    left: 160px;
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+}
+
+
+/* character 2 style */
+.char2 {
+    position: relative;
+    top: 900px;
+    left: 200px;
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+}
+
+
+/* character 3 style */
+.char3 {
+    position: relative;
+    top: 850px;
+    left: 280px;
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+}
+
+
+/* character name position */
+.charnames {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+
+/* character name style */
+.charname {
+    padding: 20px;  
+    background-color: rgb(244, 239, 239);  
+    color: black;  
+    font-size: 25px;  
+    text-align: center;  
+    z-index: 2;  
+
+    /* borders */
+    border-radius: 10px;
+    border: 2px solid rgba(92, 92, 92, 0.53);  
+    box-shadow:
+        0 0 0 4px white,  
+        0 0 0 6px rgba(92, 92, 92, 0.53),  
+        0 0 0 10px white,  
+        0 0 0 12px rgba(92, 92, 92, 0.75);  
+}
+
+
+/* character 1 name */
+.char1name {
+    position: absolute;
+    top: 225%;
+    left: 12%;
+}
+
+
+/* character 2 name */
+.char2name {
+    position: absolute;
+    top: 238%;
+    left: 42%;
+}
+
+
+/* character 3 name **/
+.char3name {
+    position: absolute;
+    top: 225%;
+    left: 75%;
+}
+
+
+/* character 4 background  */
+.char2bg {
+    position: relative;
+    top: 784px;
+    z-index: 1;
+}
+
+
+/* character 4 title */
+.char2title {
+    position: relative;
+    top: -350px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    z-index: 3;
+}
+
+
+/* character 4 */
+.char4 {
+    position: relative;
+    top: -250px;
+    left: 1050px;
+    width: 700px;
+    height: 700px;
+    z-index: 1;
+}
+
+
+/* character 4 name */
+.char4name {
+    position: absolute;
+    top: 330%;
+    left: 15%;
+    border-radius: 0;
+    width: 13%;
+    font-size: 35px;
+}
+
+
+/* character 4 information */
+.char4info {
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    color: rgb(194, 240, 255);
+    height: auto;
+    top: -820px;
+    left: 100px;
+    width: 35%;
+}
+
+
+/* character 4 picture */
+.char4pic {
+    position: relative;
+    top: -800px;
+    left: 175px;
+    width: 500px;
+    height: 300px;
+    z-index: 1;
+    border: solid 5px rgb(26, 26, 54);
+}
+
+
+/* character 5 background */
+.char3bg {
+    position: relative;
+    top: -555px;
+    z-index: 1;
+}
+
+
+/* character 5 **/
+.char5 {
+    position: relative;
+    top: -1470px;
+    left: 185px;
+    width: 700px;
+    height: 700px;
+    z-index: 1;
+}
+
+
+/* character 5 name */
+.char5name {
+    position: absolute;
+    top: 600%;
+    left: 65%;
+    border-radius: 0;
+    width: 10%;
+    font-size: 35px;
+}
+
+
+/* character 5 information */
+.char5info {
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    color: rgb(248, 217, 252);
+    height: auto;
+    top: -2050px;
+    left: 1000px;
+    width: 35%;
+}
+
+
+/* character 5 image */
+.char5pic {
+    position: relative;
+    top: -2025px;
+    left: 1070px;
+    width: 500px;
+    height: 300px;
+    z-index: 1;
+    border: solid 5px rgb(26, 26, 54);
+}
+
+
+/* character 6 background */
+.char4bg {
+    position: relative;
+    top: -1775px;
+    z-index: 1;
+}
+
+
+/* character 6 title */
+.char3title {
+    position: relative;
+    top: -2900px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    z-index: 3;
+}
+
+
+/* character 6 */
+.char6 {
+    position: relative;
+    top: -2820px;
+    left: 1100px;
+    width: 700px;
+    height: 700px;
+    z-index: 1;
+}
+
+
+/* character 6 information */
+.char6info {
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
+    color: rgb(245, 251, 190);
+    height: auto;
+    top: -3350px;
+    left: 100px;
+    width: 35%;
+}
+
+
+/* character 6 name */
+.char6name {
+    position: absolute;
+    top: 875%;
+    left: 17%;
+    border-radius: 0;
+    width: 10%;
+    font-size: 35px;
+}
+
+
+/* character 6 image */
+.char6pic {
+    position: relative;
+    top: -3330px;
+    left: 175px;
+    width: 500px;
+    height: 300px;
+    z-index: 1;
+    border: solid 5px rgb(26, 26, 54);
+}
+
+
+/* content 5 */
+
+/* background */
+.content5bg {
+    position: relative;
+    top: -3090px;
+    z-index: 1;
+}
+
+
+/* title */
+.content5 h1 {
+    position: relative;
+    top: -4150px;
+    text-align: center;
+    color: black;
+    font-size: 35px;
+    z-index: 3;
+}
+
+
+/* image */
+.content5image {
+    position: relative;
+    top: -4100px;
+    left: 18%;
+    height: 700px;
+    width: 1200px;
+    object-fit: cover;
+    z-index: 1;
+    border: 15px solid rgb(14, 8, 57);
+}
+
+/* footer */ 
+
+.content6 {
+    position: relative;
+}
+
+/* background */
+.content6bg {
+    position: relative;
+    top: -4000px;
+}
+
+/* pokemon company logo style */
+.pokemoncompany {
+    position: relative;
+    z-index: 2;
+    top: -5000px;
+    left: 765px;
+    width: 20%;
+    height: 20%;
+}
+
+/* nintendo logo style */
+.nintendologo {
+    position: relative;
+    z-index: 2;
+    top: -5025px;
+    left: 485px;
+    width: 10%;
+    height: 10%;
+}
+
+
+/* rating logo style */
+.esrb {
+    position: relative;
+    z-index: 2;
+    top: -5025px;
+    left: 800px;
+    width: 15%;
+    height: 15%;
+}
+
+/* all logo hover effect */
+.pokemoncompany:hover, .nintendologo:hover, .esrb:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* endnote */
+.endnote {
+    position: relative;
+    z-index: 2;
+    top: -4950px;
+}
+
+/* endnote style */
+.endnote h1 {
+    font-size: 14px;
+    color: #333;
+    font-size: x-large;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+/* social media buttons style */
+.socialmediabuttons {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    top: -4870px;
+    left: 25px;
+}
+
+.socialmediabuttons a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* hover effect */
+.socialmediabuttons a:hover {
+    transform: scale(1.2);
+}
+
+/* facebook */
+.facebook:hover {
+    color: #3b5998;
+}
+
+/* twitter */
+.twitter:hover {
+    color: #1da1f2;
+}
+
+/* youtube */
+.youtube:hover {
+    color: #ff0000;
+}
+
+/* instagram */
+.instagram:hover {
+    color: #e4405f;
+}
+
+/* footerlinks */
+.footerlinks {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    top: -4800px;
+    left: 25px;
+}
+
+/* style */
+.footerlinks a {
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    position: relative;
+    display: inline-block;
+}
+
+.footerlinks a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+/* hover */
+.footerlinks a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
