@@ -492,47 +492,51 @@ video {
 /* footer  */ 
 
 .content6 {
-    position: relative;
-    height: auto;
+    position: absolute;
+    top: 519%;
+    height: 90%;
+   
 }
 
 /* background */
 .content6bg {
-    position: relative;
-    top: -205px;
+    position: absolute;
+    top: -205px; 
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 
 /* pokemon company logo style */
 .pokemoncompany {
-    position: relative;
+    position: absolute;
     z-index: 2;
-    top: -1250px;
-    left: 765px;
-    width: 20%;
-    height: 20%;
+    top: -5%;
+    left: 820px;
+    width: fit-content;
+    height: 35%;
 }
 
 
 /* nintent logo style */
 .nintendologo {
-    position: relative;
+    position: absolute;
     z-index: 2;
-    top: -1270px;
-    left: 485px;
-    width: 10%;
-    height: 10%;
+    top: 18%;
+    left: 875px;
+    width: fit-content;
+    height: 12%;
 }
 
 
 /* rating logo style */
 .esrb {
-    position: relative;
+    position: absolute;
     z-index: 2;
-    top: -1270px;
-    left: 800px;
-    width: 15%;
-    height: 15%;
+    top: 18%;
+    left: 100%;
+    width: fit-content;
+    height: 12%;
 }
 
 
@@ -547,7 +551,8 @@ video {
 .endnote {
     position: relative;
     z-index: 2;
-    top: -1200px;
+    top: 42%;
+    left: 24%;
 }
 
 
@@ -569,8 +574,8 @@ video {
     display: flex;
     justify-content: center;
     gap: 80px;
-    top: -1100px;
-    left: 25px;
+    top: 47%;
+    left: 25%;
 }
 
 .socialmediabuttons a {
@@ -613,8 +618,8 @@ video {
     display: flex;
     justify-content: center;
     gap: 80px;
-    top: -1000px;
-    left: 25px;
+    top: 53%;
+    left: 25%;
 }
 
 /* style */
