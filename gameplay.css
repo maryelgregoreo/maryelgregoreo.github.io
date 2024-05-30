@@ -42,7 +42,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1900px;
+    max-width: 2100px;
     margin: 0 auto;
 }
 
@@ -142,7 +142,7 @@ video {
 /* background */
 .content1bg {
     position: absolute;
-    top: 122%;
+    top: 128%;
     z-index: 1;
 }
 
@@ -159,7 +159,7 @@ video {
     text-align: center;
     font-size: 50px;
     color: white;
-    top: 1350px;
+    top: 1275px;
     left: 2.5%;
     z-index: 1;
 }
@@ -167,7 +167,7 @@ video {
 /* textbox */
 .content1 h2 {
     position: absolute;  
-    top: 1525px;  
+    top: 1420px;  
     left: 52.5%;  
     transform: translateX(-50%);  
     width: 35%;  
@@ -190,8 +190,8 @@ video {
 /* image */
 .mypkmn {
     position: relative;
-    top: 1600px;
-    left: 570px;
+    top: 1450px;
+    left: 580px;
     height: 450px;
     width: fit-content;
     border: solid 10px lightsteelblue;
@@ -291,13 +291,13 @@ video {
     z-index: -1; 
     width: fit-content;
     height: fit-content;
-    top: 2620px;
+    top: 2530px;
 }
 
 /* background */
 .content2bg {
     position: absolute;
-    top: 445%;
+    top: 458%;
     z-index: 1;
 }
 
@@ -307,7 +307,7 @@ video {
     z-index: 2; 
     width: fit-content;
     height: 440px;
-    top: 2652px;
+    top: 2580px;
     left: 200px;
     border: solid 3px white;
 }
@@ -316,7 +316,7 @@ video {
 .content2 h1 {
     position: relative;
     z-index: 1;
-    top: 2560px;
+    top: 2500px;
     left: 75px;
     text-align: center;
     color: white;
@@ -327,8 +327,8 @@ video {
 .content2 h2 {
     position: relative;
     z-index: 1;
-    top: 2200px;
-    left: 550px;
+    top: 2125px;
+    left: 530px;
     text-align: center;
     color: black;
     font-size: 35px;
@@ -343,7 +343,7 @@ video {
     font-size: 25px;
     font-weight: 500;
     color: black;
-    top: 2200px;
+    top: 2130px;
     left: 1200px;
     width: 30%;
 }
@@ -354,7 +354,7 @@ video {
 /* background */
 .content3bg {
     position: absolute;
-    top: 557%;
+    top: 576%;
     z-index: 1;
 }
 
@@ -362,7 +362,7 @@ video {
 .content3 h1 {
     position: relative;
     z-index: 1;
-    top: 2650px;
+    top: 2580px;
     left: 50px;
     text-align: center;
     color: white;
@@ -378,7 +378,7 @@ video {
     font-size: 25px;
     font-weight: 500;
     color: white;
-    top: 2655px;
+    top: 2600px;
     left: 500px;
     width: 50%;
 }
@@ -389,8 +389,8 @@ video {
     z-index: 2; 
     width: fit-content;
     height: 500px;
-    top: 2670px;
-    left: 500px;
+    top: 2620px;
+    left: 530px;
     border: solid 5px lightsteelblue;
 }
 
@@ -399,7 +399,7 @@ video {
 /* background */
 .content4bg {
     position: absolute;
-    top: 669%;
+    top: 694%;
     z-index: 1;
 }
 
@@ -407,7 +407,7 @@ video {
 .content4 h1 {
     position: relative;
     z-index: 1;
-    top: 2825px;
+    top: 2750px;
     left: 50px;
     text-align: center;
     color: white;
@@ -418,7 +418,7 @@ video {
 .content4 h2 {
     position: relative;
     z-index: 1;
-    top: 2900px;
+    top: 2800px;
     left: 200px;
     color: white;
     font-size: 35px;
@@ -432,7 +432,7 @@ video {
     font-size: 25px;
     font-weight: 500;
     color: white;
-    top: 2900px;
+    top: 2800px;
     left: 200px;
     width: 30%;
     text-align: center;
@@ -465,7 +465,7 @@ video {
 /* background */
 .content5bg {
     position: absolute;
-    top: 780%;
+    top: 812%;
     z-index: 1;
 }
 
@@ -511,7 +511,7 @@ video {
 /* background */
 .content6bg {
     position: absolute;
-    top: 892%;
+    top: 930%;
     z-index: 1;
 }
 
@@ -557,7 +557,7 @@ video {
 /* background */
 .content7bg {
     position: absolute;
-    top: 1004%;
+    top: 1048%;
     z-index: 1;
 }
 
@@ -644,7 +644,7 @@ video {
 /* background */
 .content9bg {
     position: relative;
-    top: 2550px;
+    top: 2525px;
 }
 
 /* pokemon company logo style */
