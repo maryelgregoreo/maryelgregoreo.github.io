@@ -1,11 +1,11 @@
 /* whole site style **/
 body {
     margin: 0;
+    padding: 0;
+    -webkit-margin-top-collapse: 500px;
     font-family: 'Tillana', cursive; /* font for the whole site */
     overflow-x: hidden;
 }
-
-
 
 
 /* header logo */
@@ -229,6 +229,7 @@ video {
 }
 
 
+
 /* Content 2 */ 
 
 /* background */
@@ -275,6 +276,7 @@ video {
 }
 
 
+
 /* content 3 */
 
 /* background */
@@ -305,63 +307,52 @@ video {
 }
 
 
-/* background */
+/* content 4 */ 
+
 .char1bg {
-    position: relative;
-    top: 1700px;
-    z-index: 1;
+    position: absolute;
+    top: 569%;
 }
 
 
 /* characters title */
 .maintitle {
-    position: relative;
-    top: 1900px;
-    text-align: center;
+    position: absolute;
+    top: 575%;
+    left: 40%;
     color: white;
     font-size: 50px;
-    z-index: 3;
+    z-index: 2;
 }
 
 
 /* character 1 style */
 .char1 {
-    position: relative;
-    top: 850px;
-    left: 160px;
-    width: 500px;
+    position: absolute;
+    top: 595%;
+    left: 9%;
     height: 500px;
-    z-index: 1;
+    width: fit-content;
 }
 
 
 /* character 2 style */
 .char2 {
-    position: relative;
-    top: 900px;
-    left: 200px;
-    width: 500px;
+    position: absolute;
+    top: 602%;
+    left: 38%;
     height: 500px;
-    z-index: 1;
+    width: fit-content;
 }
 
 
 /* character 3 style */
 .char3 {
-    position: relative;
-    top: 850px;
-    left: 280px;
-    width: 500px;
+    position: absolute;
+    top: 595%;
+    left: 68%;
     height: 500px;
-    z-index: 1;
-}
-
-
-/* character name position */
-.charnames {
-    position: relative;
-    height: 400px;
-    width: 100%;
+    width: fit-content;
 }
 
 
@@ -388,297 +379,343 @@ video {
 /* character 1 name */
 .char1name {
     position: absolute;
-    top: 225%;
-    left: 12%;
+    top: 653%;
+    left: 14%;
 }
 
-
-/* character 2 name */
 .char2name {
     position: absolute;
-    top: 238%;
-    left: 42%;
+    top: 658%;
+    left: 43%;
 }
 
-
-/* character 3 name **/
 .char3name {
     position: absolute;
-    top: 225%;
-    left: 75%;
+    top: 653%;
+    left: 74%;
 }
 
 
-/* character 4 background  */
+/* character 4: Adaman */ 
+
+/* background */
 .char2bg {
-    position: relative;
-    top: 784px;
-    z-index: 1;
+    position: absolute;
+    top: 681%;
 }
 
 
-/* character 4 title */
-.char2title {
-    position: relative;
-    top: -350px;
-    text-align: center;
+/* title */
+.content5 h1 {
+    position: absolute;
+    top: 676%;
+    left: 20%;
     color: white;
-    font-size: 40px;
-    z-index: 3;
+    font-size: 40px; 
+    z-index: 2;
 }
 
 
 /* character 4 */
 .char4 {
-    position: relative;
-    top: -250px;
-    left: 1050px;
-    width: 700px;
+    position: absolute;
+    top: 695%;
+    left: 55%;
     height: 700px;
+    width: fit-content;
     z-index: 1;
 }
 
 
-/* character 4 name */
-.char4name {
-    position: absolute;
-    top: 330%;
-    left: 15%;
+/* character 4 name style */
+.charname2 {
+    padding: 20px;  
+    background-color: rgb(244, 239, 239);  
+    color: black;  
+    font-size: 25px;  
+    text-align: center;  
+    z-index: 2;  
+
+    /* borders */
     border-radius: 0;
+    border: 2px solid rgba(92, 92, 92, 0.53);  
+    box-shadow:
+        0 0 0 4px white,  
+        0 0 0 6px rgba(92, 92, 92, 0.53),  
+        0 0 0 10px white,  
+        0 0 0 12px rgba(92, 92, 92, 0.75);  
+}
+
+
+/* character 4 name */
+.charname2 h2 {
+    position: absolute;
+    top: 700%;
+    left: 18%;
     width: 13%;
     font-size: 35px;
 }
 
 
 /* character 4 information */
-.char4info {
-    position: relative;
-    z-index: 1;
+.content5 p {
+    position: absolute;
     line-height: 1;
     text-align: center;
     font-size: 23px;
     font-weight: 500;
     color: rgb(194, 240, 255);
     height: auto;
-    top: -820px;
-    left: 100px;
+    top: 720%;
+    left: 8%;
     width: 35%;
 }
 
 
 /* character 4 picture */
 .char4pic {
-    position: relative;
-    top: -800px;
-    left: 175px;
+    position: absolute;
+    top: 745%;
+    left: 13%;
     width: 500px;
-    height: 300px;
-    z-index: 1;
+    height: fit-content;
     border: solid 5px rgb(26, 26, 54);
 }
 
 
-/* character 5 background */
+/* character 5: Irida */
+
+/* background */
 .char3bg {
-    position: relative;
-    top: -555px;
-    z-index: 1;
+    position: absolute;
+    top: 793%;
 }
 
 
-/* character 5 **/
+/* character 5 */
 .char5 {
-    position: relative;
-    top: -1470px;
-    left: 185px;
-    width: 700px;
+    position: absolute;
+    top: 810%;
+    left: 10%;
     height: 700px;
+    width: fit-content;
     z-index: 1;
 }
 
+
+/* character 5 name style */
+.charname3 {
+    padding: 20px;  
+    background-color: rgb(244, 239, 239);  
+    color: black;  
+    font-size: 25px;  
+    text-align: center;  
+    z-index: 2;  
+
+    /* borders */
+    border-radius: 0;
+    border: 2px solid rgba(92, 92, 92, 0.53);  
+    box-shadow:
+        0 0 0 4px white,  
+        0 0 0 6px rgba(92, 92, 92, 0.53),  
+        0 0 0 10px white,  
+        0 0 0 12px rgba(92, 92, 92, 0.75);  
+}
 
 /* character 5 name */
-.char5name {
+.content6 h2 {
     position: absolute;
-    top: 600%;
-    left: 65%;
-    border-radius: 0;
+    top: 810%;
+    left: 68%;
     width: 10%;
-    font-size: 35px;
+    color: black;
+    font-size: 40px; 
+    z-index: 2;
 }
 
 
 /* character 5 information */
-.char5info {
-    position: relative;
-    z-index: 1;
+.content6 p {
+    position: absolute;
     line-height: 1;
     text-align: center;
     font-size: 23px;
     font-weight: 500;
     color: rgb(248, 217, 252);
     height: auto;
-    top: -2050px;
-    left: 1000px;
+    top: 830%;
+    left: 57%;
     width: 35%;
 }
 
 
-/* character 5 image */
+/* character 5 picture */
 .char5pic {
-    position: relative;
-    top: -2025px;
-    left: 1070px;
+    position: absolute;
+    top: 850%;
+    left: 60%;
     width: 500px;
-    height: 300px;
-    z-index: 1;
+    height: fit-content;
     border: solid 5px rgb(26, 26, 54);
 }
 
 
-/* character 6 background */
+/* character 6: Volo */ 
+
+/* background */
 .char4bg {
-    position: relative;
-    top: -1775px;
-    z-index: 1;
+    position: absolute;
+    top: 905%;
 }
 
 
-/* character 6 title */
-.char3title {
-    position: relative;
-    top: -2900px;
-    text-align: center;
+/* title */
+.content7 h1 {
+    position: absolute;
+    top: 900%;
+    left: 20%;
     color: white;
-    font-size: 40px;
-    z-index: 3;
+    font-size: 40px; 
+    z-index: 2;
 }
 
 
 /* character 6 */
 .char6 {
-    position: relative;
-    top: -2820px;
-    left: 1100px;
-    width: 700px;
+    position: absolute;
+    top: 918%;
+    left: 60%;
     height: 700px;
+    width: fit-content;
     z-index: 1;
 }
 
 
+/* character 6 name style */
+.charname4 {
+    padding: 20px;  
+    background-color: rgb(244, 239, 239);  
+    color: black;  
+    font-size: 25px;  
+    text-align: center;  
+    z-index: 2;  
+
+    /* borders */
+    border-radius: 0;
+    border: 2px solid rgba(92, 92, 92, 0.53);  
+    box-shadow:
+        0 0 0 4px white,  
+        0 0 0 6px rgba(92, 92, 92, 0.53),  
+        0 0 0 10px white,  
+        0 0 0 12px rgba(92, 92, 92, 0.75);  
+}
+
+
+/* character 6 name */
+.charname4 h2 {
+    position: absolute;
+    top: 925%;
+    left: 21%;
+    width: 11%;
+    font-size: 35px;
+}
+
+
 /* character 6 information */
-.char6info {
-    position: relative;
-    z-index: 1;
+.content7 p {
+    position: absolute;
     line-height: 1;
     text-align: center;
     font-size: 23px;
     font-weight: 500;
     color: rgb(245, 251, 190);
     height: auto;
-    top: -3350px;
-    left: 100px;
+    top: 945%;
+    left: 10%;
     width: 35%;
 }
 
 
-/* character 6 name */
-.char6name {
-    position: absolute;
-    top: 875%;
-    left: 17%;
-    border-radius: 0;
-    width: 10%;
-    font-size: 35px;
-}
-
-
-/* character 6 image */
+/* character 6 picture */
 .char6pic {
-    position: relative;
-    top: -3330px;
-    left: 175px;
+    position: absolute;
+    top: 965%;
+    left: 14%;
     width: 500px;
-    height: 300px;
-    z-index: 1;
+    height: fit-content;
     border: solid 5px rgb(26, 26, 54);
 }
 
 
-/* content 5 */
+/* content 8 */
 
 /* background */
-.content5bg {
-    position: relative;
-    top: -3090px;
-    z-index: 1;
+.content8bg {
+    position: absolute;
+    top: 1017%;
 }
-
 
 /* title */
-.content5 h1 {
-    position: relative;
-    top: -4150px;
+.content8 h1 {
+    position: absolute;
+    top: 1020%;
     text-align: center;
-    color: black;
     font-size: 35px;
-    z-index: 3;
+    left: 25%;
 }
-
 
 /* image */
-.content5image {
-    position: relative;
-    top: -4100px;
+.content8img {
+    position: absolute;
+    top: 1040%;
     left: 18%;
     height: 700px;
-    width: 1200px;
+    width: fit-content;
     object-fit: cover;
-    z-index: 1;
     border: 15px solid rgb(14, 8, 57);
+    z-index: 1;
 }
 
-/* footer */ 
+/* footer */
 
-.content6 {
-    position: relative;
+.content9 {
+    position: absolute;
+    top: 1125%;
 }
 
 /* background */
-.content6bg {
-    position: relative;
-    top: -4000px;
+.content9bg {
+    position: absolute;
 }
 
 /* pokemon company logo style */
 .pokemoncompany {
-    position: relative;
+    position: absolute;
+    top: 200%;
+    left: 190%;
+    height: 450%;
+    width: fit-content;
     z-index: 2;
-    top: -5000px;
-    left: 765px;
-    width: 20%;
-    height: 20%;
 }
 
 /* nintendo logo style */
 .nintendologo {
-    position: relative;
+    position: absolute;
+    top: 500%;
+    left: 218%;
+    height: 100%;
+    width: fit-content;
     z-index: 2;
-    top: -5025px;
-    left: 485px;
-    width: 10%;
-    height: 10%;
 }
-
 
 /* rating logo style */
 .esrb {
-    position: relative;
+    position: absolute;
+    top: 500%;
+    left: 325%;
+    height: 125%;
+    width: fit-content;
     z-index: 2;
-    top: -5025px;
-    left: 800px;
-    width: 15%;
-    height: 15%;
 }
 
 /* all logo hover effect */
@@ -689,16 +726,16 @@ video {
 
 /* endnote */
 .endnote {
-    position: relative;
-    z-index: 2;
-    top: -4950px;
+    position: absolute;
+    top: 700%;
+    left: -60%;
+    width: 600%;
 }
 
 /* endnote style */
 .endnote h1 {
-    font-size: 14px;
-    color: #333;
     font-size: x-large;
+    color: #333;
     line-height: 1.5;
     margin: 0;
     text-align: center;
@@ -709,10 +746,9 @@ video {
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: center;
     gap: 80px;
-    top: -4870px;
-    left: 25px;
+    top: 730px;
+    left: 770px;
 }
 
 .socialmediabuttons a {
@@ -749,13 +785,14 @@ video {
 
 /* footerlinks */
 .footerlinks {
-    position: relative;
+    position: absolute;
     z-index: 2;
     display: flex;
     justify-content: center;
     gap: 80px;
-    top: -4800px;
-    left: 25px;
+    top: 1050%;
+    left: -700px;
+    width: 800%;
 }
 
 /* style */
