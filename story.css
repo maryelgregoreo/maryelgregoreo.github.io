@@ -1,17 +1,19 @@
-/* whole site style **/
+/* whole site **/
 body {
     margin: 0;
     padding: 0;
-    -webkit-margin-top-collapse: 500px;
+    background-color: rgb(7, 55, 106); /* website color **/
     font-family: 'Tillana', cursive; /* font for the whole site */
     overflow-x: hidden;
+    height: auto;
 }
+
 
 
 /* header logo */
 .header_logo {
-    position: absolute;
-    top: 165px;
+    position: absolute; /* type of position */
+    top: 165px; 
     left: 20px;
     z-index: 2;
 }
@@ -43,7 +45,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1900px;
+    max-width: 200%;
     margin: 0 auto;
 }
 
@@ -110,7 +112,7 @@ nav {
     height: 2px;
     background-color: #333;
     left: 0;
-    transition: transform 0.3s ease-in-out;
+
 }
 
 .toggle:before {
@@ -132,11 +134,12 @@ nav {
 
 /* home video */
 video {
-    width: max-content;
-    position: absolute;
+    width:fit-content;
+    position: relative;
     z-index: 1;
     top: 100px;
 }
+
 
 
 /* content 1 */
@@ -144,7 +147,7 @@ video {
 /* background  1 */
 .content1bg {
     position: absolute;
-    top: 122%;
+    top: 128%;
     z-index: -1;
 }
 
@@ -162,14 +165,14 @@ video {
     position: relative;
     text-align: center;
     font-size: 50px;
-    top: 1350px;
+    top: 250px;
 }
 
 
 /* text box */
 .content1 h2 {
     position: absolute;  
-    top: 1525px;  
+    top: 1475px;  
     left: 50%;  
     transform: translateX(-50%);  
     width: 35%;  
@@ -193,8 +196,8 @@ video {
 /* hisuimap style */
 .hisuimap  {
     position: relative;
-    top: 1600px;
-    left: 425px;
+    top: 425px;
+    left: 450px;
     height: 600px;
     width: 1000px;
     z-index: 1;
@@ -205,7 +208,7 @@ video {
 .content1 p {
     position: relative;
     text-align: center;
-    top: 1620px;
+    top: 450px;
     font-size: x-large;
     font-weight: 500;
 }
@@ -214,7 +217,7 @@ video {
 /* image scroller style */
 .image_scroller {
     position: relative;
-    top: 1640px;
+    top: 470px;
     background-color: #333;
     overflow: hidden;
     white-space: nowrap;
@@ -235,7 +238,7 @@ video {
 /* background */
 .content2bg {
     position: absolute;
-    top: 346%;
+    top: 350%;
 }
 
 
@@ -245,7 +248,7 @@ video {
     z-index: 2; 
     width: 800px;
     height: 950px;
-    top: 1725px;
+    top: 525px;
     left: 560px;
 }
 
@@ -253,8 +256,8 @@ video {
 /* title */
 .content2 h1 {
     position: relative;
-    z-index: 1;
-    top: 875px;
+    z-index: 2;
+    top: -325px;
     left: 590px;
     color: white;
     font-size: 50px;
@@ -270,9 +273,9 @@ video {
     font-size: 23px;
     font-weight: 500;
     height: auto;
-    top: 1520px;
-    left: 525px;
-    width: 50%;
+    top: 300px;
+    left: 560px;
+    width: 45%;
 }
 
 
@@ -282,14 +285,14 @@ video {
 /* background */
 .content3bg {
     position: absolute;
-    top: 457%;
+    top: 468%;
 }
 
 
 /* title */
 .content3 h1 {
     position: relative;
-    top: 1800px;
+    top: 575px;
     left: 500px;
     font-size: 45px;
     z-index: 1;
@@ -299,7 +302,7 @@ video {
 /* main character image */
 .content3mc {
     position: relative;
-    top: 1750px;
+    top: 550px;
     left: 550px;
     height: 750px;
     width: 750px;
@@ -311,7 +314,7 @@ video {
 
 .char1bg {
     position: absolute;
-    top: 569%;
+    top: 575%;
 }
 
 
@@ -652,13 +655,13 @@ video {
 /* background */
 .content8bg {
     position: absolute;
-    top: 1017%;
+    top: 1022%;
 }
 
 /* title */
 .content8 h1 {
     position: absolute;
-    top: 1020%;
+    top: 1030%;
     text-align: center;
     font-size: 35px;
     left: 25%;
@@ -667,7 +670,7 @@ video {
 /* image */
 .content8img {
     position: absolute;
-    top: 1040%;
+    top: 1050%;
     left: 18%;
     height: 700px;
     width: fit-content;
@@ -680,7 +683,7 @@ video {
 
 .content9 {
     position: absolute;
-    top: 1125%;
+    top: 1135%;
 }
 
 /* background */
