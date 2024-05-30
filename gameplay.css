@@ -1,11 +1,11 @@
 /* whole site style **/
 body {
     margin: 0;
+    padding: 0;
     background-color: rgb(7, 55, 106); /* website color **/
     font-family: 'Tillana', cursive; /* font for the whole site */
     overflow-x: hidden;
 }
-
 
 /* header logo */
 .header_logo {
