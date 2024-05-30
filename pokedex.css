@@ -170,10 +170,10 @@ nav {
 .rowlet_entry p {
     position: relative;
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
     color: black;
-    top: 1250px;
+    top: 1235px;
     left: 54%;
     width: 40%;
     z-index: 1;
@@ -181,7 +181,7 @@ nav {
 
 .rowlet_img {
     position: relative;
-    top: 1250px;
+    top: 1230px;
     left: 1100px;
     width: fit-content;
     height: 300px;
@@ -239,18 +239,18 @@ nav {
 .cyndaquil_entry p {
     position: absolute;
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
     color: black;
-    top: 250%;
-    left: 6%;
-    width: 40%;
+    top: 248%;
+    left: 7%;
+    width: 35%;
     z-index: 1;
 }
 
 .cyndaquil_img {
     position: absolute;
-    top: 284%;
+    top: 277%;
     left: 200px;
     width: fit-content;
     height: 300px;
@@ -309,12 +309,12 @@ nav {
 .oshawott_entry p {
     position: absolute;
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
     color: black;
-    top: 367%;
+    top: 365%;
     left: 52%;
-    width: 40%;
+    width: 38%;
     z-index: 1;
 }
 
@@ -322,8 +322,8 @@ nav {
 
 .oshawott_img {
     position: absolute;
-    top: 400%;
-    left: 57%;
+    top: 395%;
+    left: 56%;
     width: fit-content;
     height: 300px;
     border: solid 10px #2A3E59;
@@ -515,18 +515,18 @@ nav {
 .dewott_entry p {
     position: absolute;
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
     color: black;
-    top: 718%;
+    top: 716%;
     left: 11%;
-    width: 40%;
+    width: 37%;
     z-index: 1;
 }
 
 .dewott_img {
     position: absolute;
-    top: 752%;
+    top: 747%;
     left: 310px;
     width: fit-content;
     height: 300px;
@@ -663,7 +663,7 @@ nav {
 
 .typhlosion_img {
     position: absolute;
-    top: 987%;
+    top: 985%;
     left: 310px;
     width: fit-content;
     height: 300px;
@@ -925,18 +925,18 @@ nav {
 .kleavor_entry p {
     position: absolute;
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
     color: black;
-    top: 1425%;
+    top: 1423%;
     left: 11%;
-    width: 40%;
+    width: 38%;
     z-index: 1;
 }
 
 .kleavor_img {
     position: absolute;
-    top: 1458%;
+    top: 1454%;
     left: 310px;
     width: fit-content;
     height: 300px;
@@ -1197,7 +1197,7 @@ nav {
 .braviary_entry p {
     position: absolute;
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
     color: black;
     top: 1897%;
@@ -1208,7 +1208,7 @@ nav {
 
 .braviary_img {
     position: absolute;
-    top: 1930%;
+    top: 1927%;
     left: 14%;
     width: fit-content;
     height: 300px;
@@ -1333,19 +1333,19 @@ nav {
 .dialga_entry p {
     position: absolute;
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
     color: black;
     top: 2131%;
     left: 11%;
-    width: 36%;
+    width: 38%;
     z-index: 1;
 }
 
 .dialga_img {
     position: absolute;
-    top: 2165%;
-    left: 15%;
+    top: 2158%;
+    left: 16%;
     width: fit-content;
     height: 300px;
     border: solid 10px #2A3E59;
@@ -1469,7 +1469,7 @@ nav {
 .darkrai_entry p {
     position: absolute;
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
     color: black;
     top: 2368%;
@@ -1480,7 +1480,7 @@ nav {
 
 .darkrai_img {
     position: absolute;
-    top: 2402%;
+    top: 2398%;
     left: 310px;
     width: fit-content;
     height: 300px;
@@ -1577,10 +1577,10 @@ nav {
 
 .arceus {
     position: absolute;
-    top: 2598%;
+    top: 2597%;
     left: 1100px;
-    width: 700px;
-    height: 700px;
+    width: fit-content;
+    height: 650px;
     z-index: 1;
 }
 
