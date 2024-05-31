@@ -114,6 +114,17 @@ nav {
     transform: translateY(-10px) rotate(-45deg);
 }
 
+.menu li a.active {
+    color: white; /* change the color to indicate active state */
+    font-weight: bold;
+}
+
+.menu li a.active:before {
+    transform: scaleX(1);
+    background-color: white; /* change the color of the underline to match the active state */
+}
+
+
 .pkdexbg {
     position: absolute;
     width: 100%;
