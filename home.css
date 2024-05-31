@@ -6,8 +6,8 @@ body {
     font-family: 'Tillana', cursive; /* font for the whole site */
     overflow-x: hidden;
     height: auto;
+    cursor: url('contents/pokeballcursor.png'), auto;
 }
-
 
 
 /* header logo */
@@ -16,6 +16,7 @@ body {
     top: 165px; 
     left: 20px;
     z-index: 2;
+    background-image: url();
 }
 
 
@@ -129,6 +130,16 @@ nav {
 
 .toggle.active:after {
     transform: translateY(-10px) rotate(-45deg);
+}
+
+.menu li a.active {
+    color: white; /* change the color to indicate active state */
+    font-weight: bold;
+}
+
+.menu li a.active:before {
+    transform: scaleX(1);
+    background-color: white; /* change the color of the underline to match the active state */
 }
 
 
@@ -296,7 +307,7 @@ video {
     z-index: 2; 
     width: 750px;
     height: 850px;
-    top: -95px;
+    top: -150px;
     left: 560px;
 }
 
@@ -410,7 +421,7 @@ video {
 /* pokemon */ 
 .slide img {
     position: relative;
-    top: -1070px;
+    top: -1120px;
     left: 900px;
     transform: translateX(-50%);
     width: 500px;
@@ -487,7 +498,6 @@ video {
     background: rgb(65, 139, 154);
     box-shadow: 0px 6px rgb(65, 139, 154);
   }
-
 
 
 /* footer  */ 
@@ -650,4 +660,36 @@ video {
 .footerlinks a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+
+
+@media (max-width: 1200px) {
+    body {
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+        margin: 20px;
+    }
+
+   .homebg, .content4bg, .content5bg, .content6bg {
+        width: max-content;
+        height: max-content;
+    }
+
+   .content1,.content2,.content3,.content4,.content5 {
+        padding: 20px;
+    }
 }
