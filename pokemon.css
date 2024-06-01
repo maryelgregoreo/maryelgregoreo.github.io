@@ -1,65 +1,82 @@
+/* whole site **/
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(71, 89, 109);
-    font-family: 'Tillana', cursive;
+    background-color: rgb(7, 55, 106); /* website color **/
+    font-family: 'Tillana', cursive; /* font for the whole site */
     overflow-x: hidden;
-}
-
-.logo {
-    position: fixed;
-    left: 3%;
-    z-index: 4;
-    width: 75px;
     height: auto;
 }
 
-/* Header Logo */
+
+/* header logo */
 .header_logo {
-    position: absolute;
-    top: 165px;
+    position: absolute; /* type of position */
+    top: 165px; 
     left: 20px;
     z-index: 2;
 }
 
-nav {
-    background-color: rgb(22, 45, 83);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 4;
+
+/* logo */
+.logo {
+    position: fixed; /* logo is fixed in the navigation bar */
+    left: 3%;
+    z-index: 4; /* logo will stay on top */
+    width: 75px;
+    height: auto;
 }
 
+
+/* navigation bar */
+nav {
+    background-color: rgb(22, 45, 83);
+    position: fixed; /* nav bar is fixed on top */
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 4; /* navigation will stay on top */
+}
+
+
+/* container to customize navigation bar */
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 2000px;
+    max-width: 200%;
     margin: 0 auto;
 }
 
+
+/* the list */
 .menu {
     display: flex;
     list-style: none; 
     justify-content: flex-end;
 }
 
+
+/* the space between per link */
 .menu li {
     margin: 15px;
 }
 
+
+/* links */
 .menu li a {
     color: white;
-    margin-left: 50px;
+    margin-left: 50px; 
     left: 850px;
     font-size: x-large;
     font-weight: bold;
     text-decoration: none;
     position: relative;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; /* transition effect */
 }
 
+
+/* links hover effect */
 .menu li a:before {
     content: "";
     display: block;
@@ -70,12 +87,13 @@ nav {
     height: 2px;
     background-color: white;
     transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* transition effect */
 }
 
 .menu li a:hover:before {
     transform: scaleX(1);
 }
+
 
 .toggle {
     width: 30px;
@@ -93,7 +111,7 @@ nav {
     height: 2px;
     background-color: #333;
     left: 0;
-    transition: transform 0.3s ease-in-out;
+
 }
 
 .toggle:before {
@@ -123,6 +141,7 @@ nav {
 }
 
 
+/* home video */
 video {
     width: max-content;
     position: absolute;
@@ -131,26 +150,29 @@ video {
 }
 
 
-/* content 1 */
-
+/* content 1 background */
 .content1bg {
     position: absolute;
     top: 122%;
     z-index: 1;
 }
 
+/* content 2 background */
 .content2bg {
     position: absolute;
     top: 228%;
     z-index: 1;
 }
 
+/* content 3 background */
 .content3bg {
     position: absolute;
     top: 323%;
     z-index: 1;
 }
 
+
+/* title */
 .content1 h1 {
     position: relative;
     text-align: center;
@@ -161,6 +183,8 @@ video {
     z-index: 1;
 }
 
+
+/* text box */
 .content1 h2 {
     position: absolute;  
     top: 1300px;  
@@ -183,6 +207,8 @@ video {
         0 0 0 12px rgba(92, 92, 92, 0.75); 
 }
 
+
+/* rowlet image */
 .rowlet {
     position: relative;
     top: 1430px;
@@ -192,6 +218,8 @@ video {
     z-index: 1;
 }
 
+
+/* cyndaquil image */
 .cyndaquil {
     position: relative;
     top: 1390px;
@@ -201,6 +229,8 @@ video {
     z-index: 1;
 }
 
+
+/* oshawott image */
 .oshawott {
     position: relative;
     top: 1420px;
@@ -210,6 +240,8 @@ video {
     z-index: 1;
 }
 
+
+/* dartrix image */
 .dartrix {
     position: relative;
     top: 1680px;
@@ -219,6 +251,8 @@ video {
     z-index: 1;
 }
 
+
+/* quilava image */
 .quilava {
     position: relative;
     top: 1680px;
@@ -228,6 +262,8 @@ video {
     z-index: 1;
 }
 
+
+/* dewott image */
 .dewott {
     position: relative;
     top: 1680px;
@@ -237,6 +273,8 @@ video {
     z-index: 1;
 }
 
+
+/* decidueye image */
 .decidueye {
     position: relative;
     top: 1920px;
@@ -246,6 +284,8 @@ video {
     z-index: 1;
 }
 
+
+/* typhlosion image */
 .typhlosion {
     position: relative;
     top: 1920px;
@@ -255,6 +295,8 @@ video {
     z-index: 1;
 }
 
+
+/* samurott image */
 .samurott {
     position: relative;
     top: 1920px;
@@ -266,8 +308,7 @@ video {
 
 
 
-/* Name Button 1 */
-
+/* first set of buttons  */
 .name-button1{
     position: relative;
     top: 175px;
@@ -277,6 +318,7 @@ video {
     gap: 20px;
 }
 
+/* button style */
 .content1 .button {
     width: 180px;
     height: 45px;
@@ -299,7 +341,8 @@ video {
     top:6px;
 }
 
-/* Cyndaquil Button */
+
+/* Rowlet Button */
 
 .name1{
     box-shadow: 0px 6px #2c3e50;
@@ -317,7 +360,7 @@ video {
 }
 
 
-/* Rowlet Button */
+/* Cyndaquil Button */
 
 .name2{
     background: #34495e;
@@ -351,7 +394,7 @@ video {
 }
 
 
-/* Name Button 2 */
+/* second set of buttons */
 
 .name-button2{
     position: relative;
@@ -362,6 +405,8 @@ video {
     gap: 20px;
 }
 
+
+/* button style */
 .content2 .button {
     width: 180px;
     height: 45px;
@@ -383,6 +428,7 @@ video {
     position:relative;
     top:6px;
 }
+
 
 /* Dartrix Button */
 
@@ -436,7 +482,7 @@ video {
 }
 
 
-/* Name Button 3 */
+/* third set of buttons  */
 
 .name-button3{
     position: relative;
@@ -447,6 +493,8 @@ video {
     gap: 20px;
 }
 
+
+/* button style */
 .content3 .button {
     width: 180px;
     height: 45px;
@@ -524,6 +572,7 @@ video {
 
 /* Content 2 */
 
+/* background */
 .content4bg {
     position: absolute;
     top: 441%;
@@ -531,6 +580,7 @@ video {
 }
 
 
+/* title */
 .content2 h1 {
     position: relative;
     text-align: center;
@@ -542,6 +592,7 @@ video {
 }
 
 
+/* wyrdeer image */
 .wyrdeer {
     position: relative;
     top: 1150px;
@@ -551,6 +602,8 @@ video {
     z-index: 1;
 }
 
+
+/* basculegion image */
 .basculegion {
     position: relative;
     top: 1200px;
@@ -560,6 +613,8 @@ video {
     z-index: 1;
 }
 
+
+/* kleavor image */
 .kleavor {
     position: relative;
     top: 1150px;
@@ -570,8 +625,7 @@ video {
 }
 
 
-/* Name Button 4 */
-
+/* fourth set of buttons */
 .name-button4{
     position: relative;
     top: 1100px;
@@ -581,6 +635,7 @@ video {
 
 }
 
+/* button style */
 .content2 .button {
     width: 250px;
     height: 45px;
@@ -602,6 +657,7 @@ video {
     position:relative;
     top:6px;
 }
+
 
 /* Wyrdeer Button */
 
@@ -658,12 +714,14 @@ video {
 
 /* Content 3 */
 
+/* background */
 .content5bg {
     position: absolute;
     top: 547%;
     z-index: 1;
 }
 
+/* title */
 .content3 h1 {
     position: relative;
     text-align: center;
@@ -674,6 +732,7 @@ video {
     z-index: 1;
 }
 
+/* text */
 .content3 p {
     position: relative;
     text-align: center;
@@ -685,6 +744,8 @@ video {
     z-index: 1;
 }
 
+
+/* voltorb image */
 .hisuian_voltorb {
     position: relative;
     top: 1000px;
@@ -694,6 +755,7 @@ video {
     z-index: 1;
 }
 
+/* zorua image */
 .hisuian_zorua {
     position: relative;
     top: 950px;
@@ -703,6 +765,7 @@ video {
     z-index: 1;
 }
 
+/* zoroark image */
 .hisuian_zoroark {
     position: relative;
     top: 950px;
@@ -712,7 +775,8 @@ video {
     z-index: 1;
 }
 
-/* Name Button 5 */
+
+/* fifth set of buttons */
 
 .name-button5{
     position: relative;
@@ -723,6 +787,7 @@ video {
 
 }
 
+/* button style */
 .content3 .button {
     width: 250px;
     height: 45px;
@@ -744,6 +809,7 @@ video {
     position:relative;
     top:6px;
 }
+
 
 /* Hisuian Voltorb Button */
 
@@ -800,12 +866,14 @@ video {
 
 /* content 4 */
 
+/* background */
 .content6bg {
     position: absolute;
     top: 650%;
     z-index: 1;
 }
 
+/* braviary image */
 .hisuian_braviary {
     position: relative;
     top: 800px;
@@ -815,6 +883,7 @@ video {
     z-index: 1;
 }
 
+/* growlithe image */
 .hisuian_growlithe {
     position: relative;
     top: 800px;
@@ -824,7 +893,7 @@ video {
     z-index: 1;
 }
 
-/* Name Button 6 */
+/* sixth set of buttons  */
 
 .name-button6{
     position: relative;
@@ -835,6 +904,7 @@ video {
 
 }
 
+/* button style */
 .content4 .button {
     width: 300px;
     height: 45px;
@@ -896,12 +966,14 @@ video {
 
 /* Content 5 */
 
+/* background */
 .content7bg {
     position: absolute;
     top: 768%;
     z-index: 1;
 }
 
+/* title */
 .content5 h1 {
     position: relative;
     text-align: center;
@@ -912,6 +984,7 @@ video {
     z-index: 1;
 }
 
+/* dialga image */
 .dialga {
     position: relative;
     top: 800px;
@@ -921,6 +994,7 @@ video {
     z-index: 1;
 }
 
+/* palkia image */
 .palkia {
     position: relative;
     top: 800px;
@@ -931,7 +1005,7 @@ video {
 }
 
 
-/* Name Button 7 */
+/* seventh set of buttons */
 
 .name-button7{
     position: relative;
@@ -942,6 +1016,7 @@ video {
 
 }
 
+/* button style */
 .content5 .button {
     width: 450px;
     height: 45px;
@@ -1000,19 +1075,16 @@ video {
 }
 
 
-
-
-
-
-
 /* Content 6 */
 
+/* background */
 .content8bg {
     position: absolute;
     top: 873%;
     z-index: 1;
 }
 
+/* title */
 .content6 h1 {
     position: relative;
     text-align: center;
@@ -1023,6 +1095,8 @@ video {
     z-index: 1;
 }
 
+
+/* darkrai image */
 .darkrai {
     position: relative;
     top: 900px;
@@ -1032,6 +1106,8 @@ video {
     z-index: 1;
 }
 
+
+/* shaymin image */
 .shaymin {
     position: relative;
     top: 875px;
@@ -1042,7 +1118,7 @@ video {
 }
 
 
-/* Name Button 8 */
+/* eight set of button */
 
 .name-button8{
     position: relative;
@@ -1052,6 +1128,7 @@ video {
 
 }
 
+/* button style */
 .content6 .button {
     width: 200px;
     height: 45px;
@@ -1073,6 +1150,7 @@ video {
     position:relative;
     top:6px;
 }
+
 
 /* Darkrai Button */
 
@@ -1110,16 +1188,16 @@ video {
 }
 
 
-
 /* Content 7 */
 
+/* background */
 .content9bg {
     position: absolute;
     top: 985%;
     z-index: 1;
 }
 
-
+/* arceus image */
 .arceus {
     position: relative;
     top: 900px;
@@ -1130,7 +1208,7 @@ video {
 }
 
 
-/* Name Button 9 */
+/* ninth set of buttons */
 
 .name-button9{
     position: relative;
@@ -1141,6 +1219,7 @@ video {
 
 }
 
+/* button style */
 .content7 .button {
     width: 200px;
     height: 45px;
@@ -1189,17 +1268,18 @@ video {
 }
 
 
-/* Footer */ 
-
+/* footer  */ 
 .content9 {
     position: relative;
 }
 
+/* background */
 .content10bg {
     position: relative;
     top: 2175px;
 }
 
+/* pokemon company logo style */
 .pokemoncompany {
     position: relative;
     z-index: 2;
@@ -1209,6 +1289,7 @@ video {
     height: 20%;
 }
 
+/* nintendo logo style */
 .nintendologo {
     position: relative;
     z-index: 2;
@@ -1218,6 +1299,7 @@ video {
     height: 10%;
 }
 
+/* rating logo style */
 .esrb {
     position: relative;
     z-index: 2;
@@ -1227,18 +1309,22 @@ video {
     height: 15%;
 }
 
+
+/* all logo hover effect */
 .pokemoncompany:hover, .nintendologo:hover, .esrb:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
 
+/* endnote */
 .endnote {
     position: relative;
     z-index: 2;
     top: 500px;
 }
 
+/* endnote style */
 .endnote h1 {
     font-size: 14px;
     color: #333;
@@ -1249,6 +1335,7 @@ video {
 }
 
 
+/* social media buttons style */
 .socialmediabuttons {
     position: relative;
     z-index: 2;
@@ -1266,27 +1353,33 @@ video {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
+/* hover effect */
 .socialmediabuttons a:hover {
     transform: scale(1.2);
 }
 
+/* facebook */
 .facebook:hover {
     color: #3b5998;
 }
 
+/* twitter */
 .twitter:hover {
     color: #1da1f2;
 }
 
+/*youtube */
 .youtube:hover {
     color: #ff0000;
 }
 
+/* instagram */
 .instagram:hover {
     color: #e4405f;
 }
 
 
+/* footerlinks */
 .footerlinks {
     position: relative;
     z-index: 2;
@@ -1297,6 +1390,7 @@ video {
     left: 25px;
 }
 
+/* style */
 .footerlinks a {
     color: #333;
     text-decoration: none;
