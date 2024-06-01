@@ -1,67 +1,82 @@
+/* whole site **/
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(71, 89, 109);
-    font-family: 'Tillana', cursive;
+    background-color: rgb(7, 55, 106); /* website color **/
+    font-family: 'Tillana', cursive; /* font for the whole site */
     overflow-x: hidden;
+    height: auto;
 }
 
+
+/* header logo */
+.header_logo {
+    position: absolute; /* type of position */
+    top: 165px; 
+    left: 20px;
+    z-index: 2;
+}
+
+
+/* logo */
 .logo {
-    position: fixed;
+    position: fixed; /* logo is fixed in the navigation bar */
     left: 3%;
-    z-index: 4;
+    z-index: 4; /* logo will stay on top */
     width: 75px;
     height: auto;
 }
 
-/* Header Logo */
-.header_logo {
-    position: absolute;
-    top: 130px;
-    left: 20px;
-    width:fit-content;
-    height: 150px;
-    z-index: 2;
-}
 
+/* navigation bar */
 nav {
     background-color: rgb(22, 45, 83);
-    position: fixed;
-    top: 0;
+    position: fixed; /* nav bar is fixed on top */
+    top: 0; 
     left: 0;
     right: 0;
-    z-index: 4;
+    z-index: 4; /* navigation will stay on top */
 }
 
+
+/* container to customize navigation bar */
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 2000px;
+    max-width: 200%;
     margin: 0 auto;
 }
 
+
+/* the list */
 .menu {
     display: flex;
     list-style: none; 
     justify-content: flex-end;
 }
 
+
+/* the space between per link */
 .menu li {
     margin: 15px;
 }
 
+
+/* links */
 .menu li a {
     color: white;
-    margin-left: 50px;
+    margin-left: 50px; 
     left: 850px;
     font-size: x-large;
     font-weight: bold;
     text-decoration: none;
     position: relative;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; /* transition effect */
 }
 
+
+/* links hover effect */
 .menu li a:before {
     content: "";
     display: block;
@@ -72,12 +87,13 @@ nav {
     height: 2px;
     background-color: white;
     transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* transition effect */
 }
 
 .menu li a:hover:before {
     transform: scaleX(1);
 }
+
 
 .toggle {
     width: 30px;
@@ -95,7 +111,7 @@ nav {
     height: 2px;
     background-color: #333;
     left: 0;
-    transition: transform 0.3s ease-in-out;
+
 }
 
 .toggle:before {
@@ -125,6 +141,7 @@ nav {
 }
 
 
+/* home background */
 .pkdexbg {
     position: absolute;
     width: 100%;
@@ -135,12 +152,14 @@ nav {
 
 /* Rowlet Entry */ 
 
+/* background */
 .pkmnbg1 {
     position: absolute;
     top: 100%;
     z-index: 1;
 }
 
+/* name */
 .rowlet_entry h1 {
     position: absolute;
     font-size: 70px;
@@ -151,6 +170,7 @@ nav {
     z-index: 1;
 }
 
+/* rowlet image */
 .rowlet {
     position: absolute;
     top: 1250px;
@@ -160,7 +180,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .rowlet_entry .stats_list {
     display: flex;
     position: absolute;
@@ -174,10 +194,12 @@ nav {
     z-index: 1;
 }
 
+
 .rowlet_entry .stats_list li {
     margin: 0 4%
 }
 
+/* rowlet information */
 .rowlet_entry p {
     position: relative;
     text-align: center;
@@ -190,6 +212,7 @@ nav {
     z-index: 1;
 }
 
+/* rowlet in game image */
 .rowlet_img {
     position: relative;
     top: 1230px;
@@ -203,12 +226,14 @@ nav {
 
 /* Cyndaquil Entry */ 
 
+/* background */
 .pkmnbg2 {
     position: absolute;
     top: 218%;
     z-index: 1;
 }
 
+/* name */
 .cyndaquil_entry h1 {
     position: absolute;
     font-size: 70px;
@@ -219,6 +244,7 @@ nav {
     z-index: 1;
 }
 
+/* cyndaquil image */
 .cyndaquil {
     position: absolute;
     top: 245%;
@@ -229,6 +255,7 @@ nav {
 }
 
 
+/* stats list */
 .cyndaquil_entry .stats_list {
     display: flex;
     position: absolute;
@@ -247,6 +274,7 @@ nav {
 }
 
 
+/* cyndaquil information */
 .cyndaquil_entry p {
     position: absolute;
     text-align: center;
@@ -259,6 +287,7 @@ nav {
     z-index: 1;
 }
 
+/* cyndaquil in game image */
 .cyndaquil_img {
     position: absolute;
     top: 277%;
@@ -272,12 +301,14 @@ nav {
 
 /* Oshawott Entry */ 
 
+/* background */
 .pkmnbg3 {
     position: absolute;
     top: 335%;
     z-index: 1;
 }
 
+/* name */
 .oshawott_entry h1 {
     position: absolute;
     font-size: 65px;
@@ -288,6 +319,7 @@ nav {
     z-index: 1;
 }
 
+/* oshawott image */
 .oshawott {
     position: absolute;
     top: 368%;
@@ -297,7 +329,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .oshawott_entry .stats_list {
     display: flex;
     position: absolute;
@@ -315,8 +347,7 @@ nav {
     margin: 0 68px
 }
 
-
-
+/* oshawott information */
 .oshawott_entry p {
     position: absolute;
     text-align: center;
@@ -330,7 +361,7 @@ nav {
 }
 
 
-
+/* oshawott in game image */
 .oshawott_img {
     position: absolute;
     top: 395%;
@@ -344,12 +375,14 @@ nav {
 
 /* Dartrix Entry */ 
 
+/* background */
 .pkmnbg4 {
     position: absolute;
     top: 452%;
     z-index: 1;
 }
 
+/* name */
 .dartrix_entry h1 {
     position: absolute;
     font-size: 70px;
@@ -360,6 +393,7 @@ nav {
     z-index: 1;
 }
 
+/* dartrix image */
 .dartrix {
     position: absolute;
     top: 487%;
@@ -369,7 +403,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .dartrix_entry .stats_list {
     display: flex;
     position: absolute;
@@ -387,6 +421,7 @@ nav {
     margin: 0 68px
 }
 
+/* dartrix information */
 .dartrix_entry p {
     position: absolute;
     text-align: center;
@@ -399,6 +434,7 @@ nav {
     z-index: 1;
 }
 
+/* dartrix in game image */
 .dartrix_img {
     position: absolute;
     top: 515%;
@@ -412,12 +448,14 @@ nav {
 
 /* Quilava Entry */ 
 
+/* background */
 .pkmnbg5 {
     position: absolute;
     top: 570%;
     z-index: 1;
 }
 
+/* name */
 .quilava_entry h1 {
     position: absolute;
     font-size: 70px;
@@ -428,6 +466,7 @@ nav {
     z-index: 1;
 }
 
+/* quilava image */
 .quilava {
     position: absolute;
     top: 600%;
@@ -437,7 +476,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .quilava_entry .stats_list {
     display: flex;
     position: absolute;
@@ -455,6 +494,7 @@ nav {
     margin: 0 68px
 }
 
+/* quilava information */
 .quilava_entry p {
     position: absolute;
     text-align: center;
@@ -467,6 +507,8 @@ nav {
     z-index: 1;
 }
 
+
+/* quilava in game image */
 .quilava_img {
     position: absolute;
     top: 633%;
@@ -480,12 +522,14 @@ nav {
 
 /* Dewott Entry */ 
 
+/* background */
 .pkmnbg6 {
     position: absolute;
     top: 688%;
     z-index: 1;
 }
 
+/* name */
 .dewott_entry h1 {
     position: absolute;
     font-size: 70px;
@@ -496,6 +540,7 @@ nav {
     z-index: 1;
 }
 
+/* dewott image */
 .dewott {
     position: absolute;
     top: 720%;
@@ -505,7 +550,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .dewott_entry .stats_list {
     display: flex;
     position: absolute;
@@ -523,6 +568,7 @@ nav {
     margin: 0 68px
 }
 
+/* dewott information */
 .dewott_entry p {
     position: absolute;
     text-align: center;
@@ -535,6 +581,7 @@ nav {
     z-index: 1;
 }
 
+/* dewott in game image */
 .dewott_img {
     position: absolute;
     top: 747%;
@@ -548,12 +595,14 @@ nav {
 
 /* Decidueye Entry */ 
 
+/* background */
 .pkmnbg7 {
     position: absolute;
     top: 806%;
     z-index: 1;
 }
 
+/* name */
 .decidueye_entry h1 {
     position: absolute;
     font-size: 65px;
@@ -564,6 +613,7 @@ nav {
     z-index: 1;
 }
 
+/* decidueye image */
 .decidueye {
     position: absolute;
     top: 838%;
@@ -573,7 +623,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .decidueye_entry .stats_list {
     display: flex;
     position: absolute;
@@ -591,6 +641,7 @@ nav {
     margin: 0 68px
 }
 
+/* decidueye information */
 .decidueye_entry p {
     position: absolute;
     text-align: center;
@@ -603,6 +654,7 @@ nav {
     z-index: 1;
 }
 
+/* decidueye in game image */
 .decidueye_img {
     position: absolute;
     top: 860%;
@@ -617,12 +669,14 @@ nav {
 
 /* Typhlosion Entry */ 
 
+/* background */
 .pkmnbg8 {
     position: absolute;
     top: 924%;
     z-index: 1;
 }
 
+/* name */
 .typhlosion_entry h1 {
     position: absolute;
     font-size: 70px;
@@ -633,6 +687,7 @@ nav {
     z-index: 1;
 }
 
+/* typhlosion image */
 .typhlosion {
     position: absolute;
     top: 950%;
@@ -642,7 +697,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .typhlosion_entry .stats_list {
     display: flex;
     position: absolute;
@@ -660,6 +715,7 @@ nav {
     margin: 0 68px
 }
 
+/* typhlosion information */
 .typhlosion_entry p {
     position: absolute;
     text-align: center;
@@ -672,6 +728,7 @@ nav {
     z-index: 1;
 }
 
+/* typhlosion in game image */
 .typhlosion_img {
     position: absolute;
     top: 985%;
@@ -685,12 +742,14 @@ nav {
 
 /* Samurott Entry */ 
 
+/* background */
 .pkmnbg9 {
     position: absolute;
     top: 1041%;
     z-index: 1;
 }
 
+/* name */
 .samurott_entry h1 {
     position: absolute;
     font-size: 65px;
@@ -701,6 +760,7 @@ nav {
     z-index: 1;
 }
 
+/* samurott image */
 .samurott {
     position: absolute;
     top: 1068%;
@@ -710,7 +770,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .samurott_entry .stats_list {
     display: flex;
     position: absolute;
@@ -728,6 +788,7 @@ nav {
     margin: 0 68px
 }
 
+/* samurott information */
 .samurott_entry p {
     position: absolute;
     text-align: center;
@@ -740,6 +801,7 @@ nav {
     z-index: 1;
 }
 
+/* samurott in game image */
 .samurott_img {
     position: absolute;
     top: 1102%;
@@ -754,12 +816,14 @@ nav {
 
 /* Wyrdeer Entry */ 
 
+/* background */
 .pkmnbg10 {
     position: absolute;
     top: 1158%;
     z-index: 1;
 }
 
+/* name */
 .wyrdeer_entry h1 {
     position: absolute;
     font-size: 70px;
@@ -770,6 +834,7 @@ nav {
     z-index: 1;
 }
 
+/* wyrdeer image */
 .wyrdeer {
     position: absolute;
     top: 1187%;
@@ -779,7 +844,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .wyrdeer_entry .stats_list {
     display: flex;
     position: absolute;
@@ -797,6 +862,8 @@ nav {
     margin: 0 68px
 }
 
+
+/* wyrdeer information */
 .wyrdeer_entry p {
     position: absolute;
     text-align: center;
@@ -809,6 +876,8 @@ nav {
     z-index: 1;
 }
 
+
+/* wyrdeer in game image */
 .wyrdeer_img {
     position: absolute;
     top: 1220%;
@@ -822,12 +891,14 @@ nav {
 
 /* Basculegion Entry */ 
 
+/* background */
 .pkmnbg11 {
     position: absolute;
     top: 1276%;
     z-index: 1;
 }
 
+/* name */
 .basculegion_entry h1 {
     position: absolute;
     font-size: 60px;
@@ -838,6 +909,7 @@ nav {
     z-index: 1;
 }
 
+/* basculegion image */
 .basculegion {
     position: absolute;
     top: 1310%;
@@ -847,7 +919,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .basculegion_entry .stats_list {
     display: flex;
     position: absolute;
@@ -865,6 +937,7 @@ nav {
     margin: 0 68px
 }
 
+/* basculegion information */
 .basculegion_entry p {
     position: absolute;
     text-align: center;
@@ -877,6 +950,7 @@ nav {
     z-index: 1;
 }
 
+/* basculegion in game image */
 .basculegion_img {
     position: absolute;
     top: 1336%;
@@ -890,12 +964,14 @@ nav {
 
 /* Kleavor Entry */ 
 
+/* background */
 .pkmnbg12 {
     position: absolute;
     top: 1394%;
     z-index: 1;
 }
 
+/* name */
 .kleavor_entry h1 {
     position: absolute;
     font-size: 70px;
@@ -906,6 +982,7 @@ nav {
     z-index: 1;
 }
 
+/* kleavor image */
 .kleavor {
     position: absolute;
     top: 1422%;
@@ -915,7 +992,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .kleavor_entry .stats_list {
     display: flex;
     position: absolute;
@@ -933,6 +1010,7 @@ nav {
     margin: 0 68px
 }
 
+/* kleavor information */
 .kleavor_entry p {
     position: absolute;
     text-align: center;
@@ -945,6 +1023,7 @@ nav {
     z-index: 1;
 }
 
+/* kleavor in game image */
 .kleavor_img {
     position: absolute;
     top: 1454%;
@@ -958,12 +1037,14 @@ nav {
 
 /* Hisuian Voltorb Entry */ 
 
+/* background */
 .pkmnbg13 {
     position: absolute;
     top: 1512%;
     z-index: 1;
 }
 
+/* name */
 .voltorb_entry h1 {
     position: absolute;
     font-size: 55px;
@@ -974,6 +1055,7 @@ nav {
     z-index: 1;
 }
 
+/* voltorb image */
 .voltorb {
     position: absolute;
     top: 1543%;
@@ -983,7 +1065,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .voltorb_entry .stats_list {
     display: flex;
     position: absolute;
@@ -1001,6 +1083,7 @@ nav {
     margin: 0 68px
 }
 
+/* voltorb information */
 .voltorb_entry p {
     position: absolute;
     text-align: center;
@@ -1013,6 +1096,7 @@ nav {
     z-index: 1;
 }
 
+/* voltorb in game image */
 .voltorb_img {
     position: absolute;
     top: 1572%;
@@ -1026,12 +1110,14 @@ nav {
 
 /* Hisuain Zorua Entry */ 
 
+/* background */
 .pkmnbg14 {
     position: absolute;
     top: 1630%;
     z-index: 1;
 }
 
+/* name */
 .zorua_entry h1 {
     position: absolute;
     font-size: 55px;
@@ -1042,6 +1128,7 @@ nav {
     z-index: 1;
 }
 
+/* zorua image */
 .zorua {
     position: absolute;
     top: 1658%;
@@ -1051,7 +1138,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .zorua_entry .stats_list {
     display: flex;
     position: absolute;
@@ -1069,6 +1156,7 @@ nav {
     margin: 0 68px
 }
 
+/* zorua information */
 .zorua_entry p {
     position: absolute;
     text-align: center;
@@ -1081,6 +1169,7 @@ nav {
     z-index: 1;
 }
 
+/* zorua in game image */
 .zorua_img {
     position: absolute;
     top: 1693%;
@@ -1094,12 +1183,14 @@ nav {
 
 /* Hisuian Zoroark Entry */ 
 
+/* background */
 .pkmnbg15 {
     position: absolute;
     top: 1748%;
     z-index: 1;
 }
 
+/* name */
 .zoroark_entry h1 {
     position: absolute;
     font-size: 50px;
@@ -1110,6 +1201,7 @@ nav {
     z-index: 1;
 }
 
+/* zoroark image */
 .zoroark {
     position: absolute;
     top: 1775%;
@@ -1119,7 +1211,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .zoroark_entry .stats_list {
     display: flex;
     position: absolute;
@@ -1137,6 +1229,7 @@ nav {
     margin: 0 68px
 }
 
+/* zoroark information */
 .zoroark_entry p {
     position: absolute;
     text-align: center;
@@ -1149,6 +1242,7 @@ nav {
     z-index: 1;
 }
 
+/* zoroark in game image */
 .zoroark_img {
     position: absolute;
     top: 1810%;
@@ -1162,12 +1256,14 @@ nav {
 
 /* Hisuain Braviary Entry */ 
 
+/* background */
 .pkmnbg16 {
     position: absolute;
     top: 1865%;
     z-index: 1;
 }
 
+/* name */
 .braviary_entry h1 {
     position: absolute;
     font-size: 55px;
@@ -1178,6 +1274,7 @@ nav {
     z-index: 1;
 }
 
+/* braviary image */
 .braviary {
     position: absolute;
     top: 1900%;
@@ -1187,7 +1284,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .braviary_entry .stats_list {
     display: flex;
     position: absolute;
@@ -1205,6 +1302,7 @@ nav {
     margin: 0 68px
 }
 
+/* braviary information */
 .braviary_entry p {
     position: absolute;
     text-align: center;
@@ -1217,6 +1315,7 @@ nav {
     z-index: 1;
 }
 
+/* braviary in game image */
 .braviary_img {
     position: absolute;
     top: 1927%;
@@ -1230,12 +1329,14 @@ nav {
 
 /* Hisuian Growlithe Entry */ 
 
+/* background */
 .pkmnbg17 {
     position: absolute;
     top: 1983%;
     z-index: 1;
 }
 
+/* name */
 .growlithe_entry h1 {
     position: absolute;
     font-size: 55px;
@@ -1246,6 +1347,7 @@ nav {
     z-index: 1;
 }
 
+/* growlithe image */
 .growlithe {
     position: absolute;
     top: 2020%;
@@ -1255,7 +1357,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .growlithe_entry .stats_list {
     display: flex;
     position: absolute;
@@ -1273,6 +1375,7 @@ nav {
     margin: 0 68px
 }
 
+/* growlithe information */
 .growlithe_entry p {
     position: absolute;
     text-align: center;
@@ -1285,6 +1388,7 @@ nav {
     z-index: 1;
 }
 
+/* growlithe in game image */
 .growlithe_img {
     position: absolute;
     top: 2040%;
@@ -1298,12 +1402,14 @@ nav {
 
 /* Dialga Entry */ 
 
+/* background */
 .pkmnbg18 {
     position: absolute;
     top: 2100%;
     z-index: 1;
 }
 
+/* name */
 .dialga_entry h1 {
     position: absolute;
     font-size: 45px;
@@ -1314,6 +1420,7 @@ nav {
     z-index: 1;
 }
 
+/* dialga image */
 .dialga {
     position: absolute;
     top: 2133%;
@@ -1323,7 +1430,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .dialga_entry .stats_list {
     display: flex;
     position: absolute;
@@ -1341,6 +1448,7 @@ nav {
     margin: 0 68px
 }
 
+/* dialga information */
 .dialga_entry p {
     position: absolute;
     text-align: center;
@@ -1353,6 +1461,7 @@ nav {
     z-index: 1;
 }
 
+/* dialga in game image */
 .dialga_img {
     position: absolute;
     top: 2158%;
@@ -1366,12 +1475,14 @@ nav {
 
 /* Palkia Entry */ 
 
+/* background */
 .pkmnbg19 {
     position: absolute;
     top: 2218%;
     z-index: 1;
 }
 
+/* name */
 .palkia_entry h1 {
     position: absolute;
     font-size: 45px;
@@ -1382,6 +1493,7 @@ nav {
     z-index: 1;
 }
 
+/* palkia image */
 .palkia {
     position: absolute;
     top: 2245%;
@@ -1391,7 +1503,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .palkia_entry .stats_list {
     display: flex;
     position: absolute;
@@ -1409,6 +1521,7 @@ nav {
     margin: 0 68px
 }
 
+/* palkia information */
 .palkia_entry p {
     position: absolute;
     text-align: center;
@@ -1421,6 +1534,7 @@ nav {
     z-index: 1;
 }
 
+/* palkia in game image */
 .palkia_img {
     position: absolute;
     top: 2280%;
@@ -1434,12 +1548,14 @@ nav {
 
 /* Darkrai Entry */ 
 
+/* background */
 .pkmnbg20 {
     position: absolute;
     top: 2336%;
     z-index: 1;
 }
 
+/* name */
 .darkrai_entry h1 {
     position: absolute;
     font-size: 60px;
@@ -1450,6 +1566,7 @@ nav {
     z-index: 1;
 }
 
+/* darkrai image */
 .darkrai {
     position: absolute;
     top: 2365%;
@@ -1459,7 +1576,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .darkrai_entry .stats_list {
     display: flex;
     position: absolute;
@@ -1477,6 +1594,7 @@ nav {
     margin: 0 68px
 }
 
+/* darkrai information */
 .darkrai_entry p {
     position: absolute;
     text-align: center;
@@ -1489,6 +1607,7 @@ nav {
     z-index: 1;
 }
 
+/* darkrai in game image */
 .darkrai_img {
     position: absolute;
     top: 2398%;
@@ -1502,12 +1621,14 @@ nav {
 
 /* Shaymin Entry */ 
 
+/* background */
 .pkmnbg21 {
     position: absolute;
     top: 2453%;
     z-index: 1;
 }
 
+/* name */
 .shaymin_entry h1 {
     position: absolute;
     font-size: 60px;
@@ -1518,6 +1639,7 @@ nav {
     z-index: 1;
 }
 
+/* shaymin image */
 .shaymin {
     position: absolute;
     top: 2490%;
@@ -1527,7 +1649,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .shaymin_entry .stats_list {
     display: flex;
     position: absolute;
@@ -1545,6 +1667,7 @@ nav {
     margin: 0 68px
 }
 
+/* shaymin information */
 .shaymin_entry p {
     position: absolute;
     text-align: center;
@@ -1557,6 +1680,7 @@ nav {
     z-index: 1;
 }
 
+/* shaymin image */
 .shaymin_img {
     position: absolute;
     top: 2509%;
@@ -1570,12 +1694,14 @@ nav {
 
 /* Arceus Entry */ 
 
+/* background */
 .pkmnbg22 {
     position: absolute;
     top: 2570%;
     z-index: 1;
 }
 
+/* name */
 .arceus_entry h1 {
     position: absolute;
     font-size: 65px;
@@ -1586,6 +1712,7 @@ nav {
     z-index: 1;
 }
 
+/* arceus image */
 .arceus {
     position: absolute;
     top: 2597%;
@@ -1595,7 +1722,7 @@ nav {
     z-index: 1;
 }
 
-
+/* stats list */
 .arceus_entry .stats_list {
     display: flex;
     position: absolute;
@@ -1613,6 +1740,7 @@ nav {
     margin: 0 68px
 }
 
+/* arceus information */
 .arceus_entry p {
     position: absolute;
     text-align: center;
@@ -1625,6 +1753,7 @@ nav {
     z-index: 1;
 }
 
+/* arceus in game image */
 .arceus_img {
     position: absolute;
     top: 2628%;
