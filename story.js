@@ -1,28 +1,32 @@
+// image scroller function
 window.onload = function() {
     var scrollContainer = document.querySelector('.image_scroller');
-    var scrollSpeed = 2; // Adjust the scroll speed as needed
-    var scrollInterval; // Define scrollInterval variable outside the function
 
-    // Function to scroll images continuously
+    // controls speed 
+    var scrollSpeed = 2;
+    // the interval of the scrolling 
+    var scrollInterval; 
+
+    // function to scroll images continuously
     function scrollImages() {
-        // Check if scrolled to the end
+        // ensures that the image are scrolling to the left
         if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-            // Instantly scroll back to the beginning
+            // scrolls back to the left after the last image
             scrollContainer.scrollLeft = 0;
         } else {
-            // Otherwise, scroll normally
-            scrollContainer.scrollLeft += 1; // Adjust scroll speed if needed
+            // ensures that the scrolling is normal
+            scrollContainer.scrollLeft += 1; 
         }
     }
 
-    // Start the scrolling interval initially
+    // start the scrolling 
     scrollInterval = setInterval(scrollImages, scrollSpeed);
 
-    // Resume scrolling on mouse leave
+    // resumes scrolling on mouse leave
     scrollContainer.addEventListener('mouseleave', function() {
-        // Clear the existing interval
+        // clears the existing interval
         clearInterval(scrollInterval);
-        // Restart the scrolling interval
+        // restarts the scrolling interval
         scrollInterval = setInterval(scrollImages, scrollSpeed);
     });
 };
