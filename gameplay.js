@@ -1,25 +1,31 @@
+// switchable tab function
 window.onload = function() {
+
+    // buttons
     var buttons = document.querySelectorAll('.tab-button');
+
+    // contents
     var contents = document.querySelectorAll('.tab-content');
 
+    // loops the event listener function
     buttons.forEach(function(button) {
         button.addEventListener('click', function() {
             var tab = this.getAttribute('data-tab');
 
-            // Remove active class from all buttons
+            // remove active class from all buttons
             buttons.forEach(function(btn) {
                 btn.classList.remove('active');
             });
 
-            // Add active class to the clicked button
+            // add active class to the clicked button
             this.classList.add('active');
 
-            // Hide all content
+            // hides all content
             contents.forEach(function(content) {
                 content.classList.remove('active');
             });
 
-            // Show the content corresponding to the clicked button
+            // shows the clicked button tab
             document.querySelector('.tab-content[data-content="' + tab + '"]').classList.add('active');
         });
     });
