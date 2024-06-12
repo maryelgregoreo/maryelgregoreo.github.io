@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(7, 55, 106); /* website color **/
+    background-color: #35394c; /* website color **/
     font-family: 'Tillana', cursive; /* font for the whole site */
     overflow-x: hidden;
     height: auto;
@@ -165,7 +165,7 @@ video {
 /* background 2 */ 
 .content1bg2 {
     position: absolute;
-    top: 234%;
+    top: 224%;
     z-index: -1;
 }
 
@@ -176,6 +176,7 @@ video {
     text-align: center;
     font-size: 50px;
     top: 250px;
+    margin-top: 3%;
 }
 
 
@@ -248,7 +249,7 @@ video {
 /* background */
 .content2bg {
     position: absolute;
-    top: 350%;
+    top: 330%;
 }
 
 
@@ -256,10 +257,11 @@ video {
 .content2 video {
     position: relative; 
     z-index: 2; 
-    width: 800px;
+    width: 40%;
     height: 950px;
     top: 525px;
     left: 560px;
+    margin-top: 8%  ;
 }
 
 
@@ -295,24 +297,25 @@ video {
 /* background */
 .content3bg {
     position: absolute;
-    top: 468%;
+    top: 428%;
 }
 
 
 /* title */
 .content3 h1 {
     position: relative;
-    top: 575px;
+    top: 400px;
     left: 500px;
     font-size: 45px;
     z-index: 1;
+    margin-top: 10%;
 }
 
 
 /* main character image */
 .content3mc {
     position: relative;
-    top: 550px;
+    top: 380px;
     left: 550px;
     height: 750px;
     width: 750px;
@@ -324,14 +327,14 @@ video {
 
 .char1bg {
     position: absolute;
-    top: 575%;
+    top: 535%;
 }
 
 
 /* characters title */
 .maintitle {
     position: absolute;
-    top: 575%;
+    top: 535%;
     left: 40%;
     color: white;
     font-size: 50px;
@@ -342,7 +345,7 @@ video {
 /* character 1 style */
 .char1 {
     position: absolute;
-    top: 595%;
+    top: 555%;
     left: 9%;
     height: 500px;
     width: fit-content;
@@ -352,7 +355,7 @@ video {
 /* character 2 style */
 .char2 {
     position: absolute;
-    top: 602%;
+    top: 562%;
     left: 38%;
     height: 500px;
     width: fit-content;
@@ -362,7 +365,7 @@ video {
 /* character 3 style */
 .char3 {
     position: absolute;
-    top: 595%;
+    top: 555%;
     left: 68%;
     height: 500px;
     width: fit-content;
@@ -392,19 +395,19 @@ video {
 /* character 1 name */
 .char1name {
     position: absolute;
-    top: 653%;
+    top: 613%;
     left: 14%;
 }
 
 .char2name {
     position: absolute;
-    top: 658%;
+    top: 618%;
     left: 43%;
 }
 
 .char3name {
     position: absolute;
-    top: 653%;
+    top: 613%;
     left: 74%;
 }
 
@@ -414,14 +417,14 @@ video {
 /* background */
 .char2bg {
     position: absolute;
-    top: 681%;
+    top: 641%;
 }
 
 
 /* title */
 .content5 h1 {
     position: absolute;
-    top: 676%;
+    top: 646%;
     left: 20%;
     color: white;
     font-size: 40px; 
@@ -432,7 +435,7 @@ video {
 /* character 4 */
 .char4 {
     position: absolute;
-    top: 695%;
+    top: 655%;
     left: 55%;
     height: 700px;
     width: fit-content;
@@ -463,7 +466,7 @@ video {
 /* character 4 name */
 .charname2 h2 {
     position: absolute;
-    top: 700%;
+    top: 660%;
     left: 18%;
     width: 13%;
     font-size: 35px;
@@ -479,7 +482,7 @@ video {
     font-weight: 500;
     color: rgb(194, 240, 255);
     height: auto;
-    top: 720%;
+    top: 680%;
     left: 8%;
     width: 35%;
 }
@@ -488,7 +491,7 @@ video {
 /* character 4 picture */
 .char4pic {
     position: absolute;
-    top: 745%;
+    top: 705%;
     left: 13%;
     width: 500px;
     height: fit-content;
@@ -501,14 +504,14 @@ video {
 /* background */
 .char3bg {
     position: absolute;
-    top: 793%;
+    top: 743%;
 }
 
 
 /* character 5 */
 .char5 {
     position: absolute;
-    top: 810%;
+    top: 750%;
     left: 10%;
     height: 700px;
     width: fit-content;
@@ -538,7 +541,7 @@ video {
 /* character 5 name */
 .content6 h2 {
     position: absolute;
-    top: 810%;
+    top: 750%;
     left: 68%;
     width: 10%;
     color: black;
@@ -556,7 +559,7 @@ video {
     font-weight: 500;
     color: rgb(248, 217, 252);
     height: auto;
-    top: 830%;
+    top: 770%;
     left: 57%;
     width: 35%;
 }
@@ -565,7 +568,7 @@ video {
 /* character 5 picture */
 .char5pic {
     position: absolute;
-    top: 850%;
+    top: 795%;
     left: 60%;
     width: 500px;
     height: fit-content;
@@ -578,25 +581,26 @@ video {
 /* background */
 .char4bg {
     position: absolute;
-    top: 905%;
+    top: 845%;
 }
 
 
 /* title */
 .content7 h1 {
     position: absolute;
-    top: 900%;
+    top: 840%;
     left: 20%;
     color: white;
     font-size: 40px; 
     z-index: 2;
+    margin-top: 5%;
 }
 
 
 /* character 6 */
 .char6 {
     position: absolute;
-    top: 918%;
+    top: 860%;
     left: 60%;
     height: 700px;
     width: fit-content;
@@ -627,7 +631,7 @@ video {
 /* character 6 name */
 .charname4 h2 {
     position: absolute;
-    top: 925%;
+    top: 860%;
     left: 21%;
     width: 11%;
     font-size: 35px;
@@ -643,7 +647,7 @@ video {
     font-weight: 500;
     color: rgb(245, 251, 190);
     height: auto;
-    top: 945%;
+    top: 880%;
     left: 10%;
     width: 35%;
 }
@@ -652,7 +656,7 @@ video {
 /* character 6 picture */
 .char6pic {
     position: absolute;
-    top: 965%;
+    top: 900%;
     left: 14%;
     width: 500px;
     height: fit-content;
@@ -665,13 +669,13 @@ video {
 /* background */
 .content8bg {
     position: absolute;
-    top: 1022%;
+    top: 950%;
 }
 
 /* title */
 .content8 h1 {
     position: absolute;
-    top: 1030%;
+    top: 950%;
     text-align: center;
     font-size: 35px;
     left: 25%;
@@ -680,7 +684,7 @@ video {
 /* image */
 .content8img {
     position: absolute;
-    top: 1050%;
+    top: 970%;
     left: 18%;
     height: 700px;
     width: fit-content;
@@ -693,7 +697,7 @@ video {
 
 .content9 {
     position: absolute;
-    top: 1135%;
+    top: 1055%;
 }
 
 /* background */
